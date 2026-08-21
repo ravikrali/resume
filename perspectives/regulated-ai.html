@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>In a regulated environment, explainability is an architecture requirement — Ravi Rali</title>
-<meta name="description" content="Life sciences, banking and healthcare do not ask whether the answer was right. They ask how it was derived, who could see the inputs, and whether you can show them that in six months.">
+<title>Explainability as an architecture requirement in regulated environments — Ravi Rali</title>
+<meta name="description" content="Life sciences, banking, and healthcare regulators ask how an answer was derived, who could see the inputs, and whether you can demonstrate both months later.">
 <link rel="canonical" href="https://ravikrali.github.io/resume/perspectives/regulated-ai.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="In a regulated environment, explainability is an architecture requirement — Ravi Rali">
-<meta property="og:description" content="Life sciences, banking and healthcare do not ask whether the answer was right. They ask how it was derived, who could see the inputs, and whether you can show them that in six months.">
+<meta property="og:title" content="Explainability as an architecture requirement in regulated environments — Ravi Rali">
+<meta property="og:description" content="Life sciences, banking, and healthcare regulators ask how an answer was derived, who could see the inputs, and whether you can demonstrate both months later.">
 <meta property="og:url" content="https://ravikrali.github.io/resume/perspectives/regulated-ai.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0d2340">
@@ -41,8 +41,8 @@
   <div class="shell">
     <p class="eyebrow"><a href="index.html" style="text-decoration:none">Perspectives</a></p>
     <div class="povhero__num" aria-hidden="true">10</div>
-    <h1>In a regulated environment, explainability is an architecture requirement</h1>
-    <p class="povhero__stand">Life sciences, banking and healthcare do not ask whether the answer was right. They ask how it was derived, who could see the inputs, and whether you can show them that in six months.</p>
+    <h1>Explainability as an architecture requirement in regulated environments</h1>
+    <p class="povhero__stand">Life sciences, banking, and healthcare regulators ask how an answer was derived, who could see the inputs, and whether you can demonstrate both months later.</p>
     <div class="povmeta">
       <span>Enterprise AI Architect &middot; Director, AI &amp; Data Management &middot; Enterprise Data Architect</span>
       <span>Point of view</span>
@@ -56,28 +56,28 @@
     <p class="reqcard__v">&ldquo;Deliver AI and data solutions within regulated, audited environments&rdquo;</p>
   </div>
 
-  <p class="position">Design the evidence trail at the same time as the capability — retrofitting it costs several times more.</p>
+  <p class="position">Design the evidence trail alongside the capability, because retrofitting it costs several times more.</p>
 
-  <div class="prose"><section><h2>Where I have had to do this</h2><p>AML transaction monitoring at Bank of America under OCC and FinCEN obligations, where a false negative is a licence problem. Liquidity risk reporting in the post-2008 rebuild. HIPAA-bound canonical models at a health insurer. Clinical operations at a top-three CRO under FDA 21 CFR Part 11 and ICH GCP E6(R3).</p>
-<p>The pattern holds across all of them: the regulator&#x27;s real question is about lineage and control, not about accuracy claims.</p></section><section><h2>What that means for AI design</h2><p>Retrieval must inherit source access control, so an answer never surfaces what the asker could not open. Every AI-executed step needs an eval and an audit record. Model risk needs the same treatment as any other model in the estate — documented, monitored for drift, with a named owner.</p>
-<p>E6(R3), effective July 2025, requires continuous auditable sponsor oversight of delegated activity. That turns connected data infrastructure and real-time visibility from a nice-to-have into an economic necessity.</p></section><section><h2>The advantage nobody expects</h2><p>Regulated constraints produce better architecture. Lineage you built for an auditor is the same lineage that lets an agent explain itself. Classification you built for privacy is the same classification that stops permission leakage through a vector store. The compliance work and the AI-readiness work are largely the same work.</p></section></div>
+  <div class="prose"><section><h2>Where I have done this</h2><p>AML transaction monitoring at Bank of America under OCC and FinCEN obligations. Liquidity risk reporting during the post-2008 regulatory rebuild. HIPAA-bound canonical models at a health insurer. Clinical operations at a leading CRO under FDA 21 CFR Part 11 and ICH GCP E6(R3).</p>
+<p>The pattern is consistent. The regulator&#x27;s question is about lineage and control rather than accuracy claims.</p></section><section><h2>What that means for AI design</h2><p>Retrieval inherits source access control, so an answer never surfaces material the requester could not otherwise open. Every AI-executed step carries an eval and an audit record. AI components are treated as models under model-risk governance: documented, monitored for drift, with a named owner.</p>
+<p>ICH GCP E6(R3), effective July 2025, requires continuous auditable sponsor oversight of delegated activity, which makes connected data infrastructure and real-time visibility an operational requirement.</p></section><section><h2>A useful side effect</h2><p>Regulated constraints tend to produce better architecture. The lineage built for an auditor is the lineage that lets an agent explain itself. The classification built for privacy is the classification that prevents permission leakage through a vector store. The compliance work and the AI-readiness work overlap substantially.</p></section></div>
 
   <div class="twoup">
     <div class="twoup__col">
       <h3>How I apply it</h3>
-      <ul class="ticklist"><li>Map the regulatory obligation to specific architecture constraints, in writing, up front</li><li>Generate audit evidence automatically from lineage and execution metadata</li><li>Treat every AI component as a model under model-risk governance</li><li>Prove parity across a full business cycle, including period-end, before decommissioning anything</li></ul>
+      <ul class="ticklist"><li>Map regulatory obligations to specific architecture constraints in writing, up front</li><li>Generate audit evidence automatically from lineage and execution metadata</li><li>Treat every AI component as a model under model-risk governance</li><li>Prove parity across a full business cycle, including period-end, before decommissioning</li></ul>
     </div>
     <div class="twoup__col">
       <h3>What good looks like</h3>
-      <ul class="ticklist"><li>An audit request is answered from the platform, not from a spreadsheet exercise</li><li>Access decisions are traceable to a policy, not to a person&#x27;s memory</li><li>Drift and eval results are reviewed on a governance cadence</li><li>Compliance is consulted at design time and is not surprised at go-live</li></ul>
+      <ul class="ticklist"><li>Audit requests are answered from the platform rather than by a manual exercise</li><li>Access decisions are traceable to a policy</li><li>Drift and eval results are reviewed on a governance cadence</li><li>Compliance is consulted at design time and is not surprised at go-live</li></ul>
     </div>
   </div>
 
   
 
   <nav class="pager" aria-label="More perspectives">
-    <a href="architecture-governance.html"><span class="k">Previous</span><span class="t">An architecture review board should remove decisions, not add meetings</span></a>
-    <a href="leading-architects.html"><span class="k">Next</span><span class="t">The job is building architects, not being the architect</span></a>
+    <a href="architecture-governance.html"><span class="k">Previous</span><span class="t">Making architecture review boards effective</span></a>
+    <a href="leading-architects.html"><span class="k">Next</span><span class="t">Developing architects and technical leads</span></a>
   </nav>
 </section>
 </main>

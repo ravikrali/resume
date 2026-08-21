@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Autonomy is a spectrum you configure, not a switch you flip — Ravi Rali</title>
-<meta name="description" content="Agentic systems carry a fundamentally different risk profile from static models, because they write as well as read. The architecture question is not &quot;can it act&quot; but &quot;what may it do unattended.&quot;">
+<title>Defining autonomy boundaries for AI agents — Ravi Rali</title>
+<meta name="description" content="Agentic systems carry a different risk profile from static models because they write as well as read. The design question is what an agent may do without supervision.">
 <link rel="canonical" href="https://ravikrali.github.io/resume/perspectives/agentic-ai.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Autonomy is a spectrum you configure, not a switch you flip — Ravi Rali">
-<meta property="og:description" content="Agentic systems carry a fundamentally different risk profile from static models, because they write as well as read. The architecture question is not &quot;can it act&quot; but &quot;what may it do unattended.&quot;">
+<meta property="og:title" content="Defining autonomy boundaries for AI agents — Ravi Rali">
+<meta property="og:description" content="Agentic systems carry a different risk profile from static models because they write as well as read. The design question is what an agent may do without supervision.">
 <meta property="og:url" content="https://ravikrali.github.io/resume/perspectives/agentic-ai.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0d2340">
@@ -41,8 +41,8 @@
   <div class="shell">
     <p class="eyebrow"><a href="index.html" style="text-decoration:none">Perspectives</a></p>
     <div class="povhero__num" aria-hidden="true">04</div>
-    <h1>Autonomy is a spectrum you configure, not a switch you flip</h1>
-    <p class="povhero__stand">Agentic systems carry a fundamentally different risk profile from static models, because they write as well as read. The architecture question is not &quot;can it act&quot; but &quot;what may it do unattended.&quot;</p>
+    <h1>Defining autonomy boundaries for AI agents</h1>
+    <p class="povhero__stand">Agentic systems carry a different risk profile from static models because they write as well as read. The design question is what an agent may do without supervision.</p>
     <div class="povmeta">
       <span>Enterprise AI Architect &middot; Director, AI &amp; Data Management</span>
       <span>Point of view</span>
@@ -56,28 +56,28 @@
     <p class="reqcard__v">&ldquo;Architect agentic AI solutions with appropriate guardrails and human oversight&rdquo;</p>
   </div>
 
-  <p class="position">Define, per workflow, what the agent does unattended, what needs approval, and what is never automated.</p>
+  <p class="position">Define, per workflow, what the agent does unattended, what requires approval, and what stays manual.</p>
 
-  <div class="prose"><section><h2>The three-tier boundary</h2><p>For every agentic workflow I write down three lists. Unattended: retries, schema re-inference, enrichment, classification proposals. Requires approval: any logic change, any policy change, anything that alters a published number. Never automated: deletion, policy override, access grants, anything irreversible without a recovery path.</p>
-<p>This is boring, and it is the entire difference between an agent programme that survives its first incident and one that does not.</p></section><section><h2>Earn autonomy, don&#x27;t assume it</h2><p>Every agent starts in propose-only mode. It moves to bounded auto-apply only after a clean proposal record over a meaningful sample — not after a good demo. Confidence thresholds are risk-tiered: the bar for merging two customer records in a marketing database is not the bar for merging them in a regulated safety database.</p>
-<p>Logging, oversight and audit capability go in before agents touch real systems, not after the first finding.</p></section><section><h2>Where agents genuinely earn their keep</h2><p>Multi-step transactional work that needs tool-calling and write access. Autonomous incident response — detect, correlate across lineage, hypothesise, validate in a sandbox, present for approval. Legacy logic archaeology, parsing old ETL metadata to recover business rules nobody documented. These are high-leverage because the human bottleneck was never the typing.</p></section></div>
+  <div class="prose"><section><h2>Three tiers of authority</h2><p>For every agentic workflow I document three lists. Unattended: retries, schema re-inference, enrichment, and classification proposals. Requires approval: any logic change, any policy change, and anything that alters a published number. Never automated: deletion, policy override, access grants, and anything irreversible without a recovery path.</p>
+<p>This is straightforward to produce, and it is the difference between an agent program that survives its first incident and one that does not.</p></section><section><h2>Earning autonomy</h2><p>Every agent starts in propose-only mode and moves to bounded auto-apply after a clean proposal record over a meaningful sample, against a documented threshold. Confidence thresholds are risk-tiered. The bar for merging two records in a marketing database differs from the bar for merging them in a regulated safety database.</p>
+<p>Logging, oversight, and audit capability go in before agents touch production systems.</p></section><section><h2>Where agents contribute most</h2><p>Multi-step transactional work that requires tool-calling and write access. Autonomous incident response, where the agent detects a failure, correlates across lineage, forms a hypothesis, validates a fix in a sandbox, and presents it for approval. Legacy logic archaeology, parsing old ETL metadata to recover undocumented business rules. In each case the constraint was analysis and verification rather than authoring.</p></section></div>
 
   <div class="twoup">
     <div class="twoup__col">
       <h3>How I apply it</h3>
-      <ul class="ticklist"><li>Write the autonomy boundary per pipeline before the agent is built</li><li>Run propose-only first; graduate on evidence, with a documented threshold</li><li>Give every agent an audit trail a compliance officer can read</li><li>Keep humans on the loop for policy and edge cases, off the loop for routine work</li></ul>
+      <ul class="ticklist"><li>Document the autonomy boundary per pipeline before the agent is built</li><li>Run propose-only first and graduate on evidence against a documented threshold</li><li>Give every agent an audit trail a compliance officer can read</li><li>Keep people on the loop for policy and edge cases, and off the loop for routine work</li></ul>
     </div>
     <div class="twoup__col">
       <h3>What good looks like</h3>
-      <ul class="ticklist"><li>You can produce the autonomy matrix for any agent in production</li><li>Steward queues shrink over time because the system learns</li><li>Incidents produce retrievable context, not just resolved tickets</li><li>Nobody is surprised by what an agent did</li></ul>
+      <ul class="ticklist"><li>The autonomy matrix can be produced for any agent in production</li><li>Steward queues shrink over time as the system learns</li><li>Incidents produce retrievable context as well as resolved tickets</li><li>Agent behavior matches what the team expects</li></ul>
     </div>
   </div>
 
   
 
   <nav class="pager" aria-label="More perspectives">
-    <a href="ai-ready-data.html"><span class="k">Previous</span><span class="t">There is no AI strategy without a data strategy</span></a>
-    <a href="knowledge-graphs-rag.html"><span class="k">Next</span><span class="t">The semantic layer is the layer everyone skips and everyone needs</span></a>
+    <a href="ai-ready-data.html"><span class="k">Previous</span><span class="t">AI readiness depends on the data foundation</span></a>
+    <a href="knowledge-graphs-rag.html"><span class="k">Next</span><span class="t">The semantic layer in retrieval and knowledge graph design</span></a>
   </nav>
 </section>
 </main>

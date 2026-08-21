@@ -163,7 +163,7 @@ def hero(profile: dict) -> str:
         <div class="hero__roles">{roles}</div>
         <p class="hero__tagline">{e(profile['tagline'])}</p>
         <div class="hero__actions">
-          <a class="btn" href="#roadmap">Walk the roadmap {arrow()}</a>
+          <a class="btn" href="#roadmap">View the roadmap {arrow()}</a>
           <a class="btn btn--ghost" href="perspectives/index.html">Read my perspectives {arrow()}</a>
           <a class="btn btn--ghost" href="{e(profile['resumePdf'])}">Download CV {arrow('down')}</a>
         </div>
@@ -194,14 +194,14 @@ def summary_and_value(profile: dict) -> str:
   <div class="shell">
     <div class="summary__grid rise">
       <div>
-        <p class="eyebrow">The short version</p>
+        <p class="eyebrow">About</p>
       </div>
       <div class="summary__body">{paras(profile['summary'])}</div>
     </div>
     <div class="rise">
       <div class="band-head" style="margin-top:clamp(3rem,6vw,5rem)">
         <p class="eyebrow">What I bring</p>
-        <h2 class="display">Four things an organisation gets when I join it.</h2>
+        <h2 class="display">How I help organizations</h2>
       </div>
       <div class="value">{cards}</div>
     </div>
@@ -294,9 +294,10 @@ def roadmap(items: list) -> str:
   <div class="shell">
     <div class="band-head rise">
       <p class="eyebrow">The roadmap</p>
-      <h2 class="display">Twenty-five years, ten milestones. Open any one.</h2>
+      <h2 class="display">Ten milestones across twenty-five years</h2>
       <p class="lede">From building a BI practice to architecting an enterprise AI platform over a global
-      clinical trial portfolio. Each stop carries what was built, what it changed, and what I was accountable for.</p>
+      clinical trial portfolio. Each milestone describes what I built, the results, and my responsibilities.
+      Select any milestone to expand it.</p>
     </div>
 
     <div class="ribbon rise" role="group" aria-label="Career timeline shortcuts">
@@ -334,10 +335,9 @@ def skills(data: dict) -> str:
   <div class="shell">
     <div class="band-head rise">
       <p class="eyebrow">Capability</p>
-      <h2 class="display">Two pillars, and I am not trading one for the other.</h2>
-      <p class="lede">Most senior roles ask for someone who can hold an architecture argument with engineers
-      in the morning and a budget conversation with executives in the afternoon. That is the job I have done
-      for the last decade.</p>
+      <h2 class="display">Technical expertise and leadership experience</h2>
+      <p class="lede">Senior roles in this field require someone who can discuss architecture in detail with
+      engineers and investment priorities with executives. That is the work I have done for the last decade.</p>
     </div>
     <div class="pillars rise">{''.join(pillars)}</div>
   </div>
@@ -351,10 +351,10 @@ def pov_teaser(povs: list) -> str:
   <div class="shell">
     <div class="band-head rise">
       <p class="eyebrow">Points of view</p>
-      <h2 class="display">Twelve short answers to the things job descriptions keep asking for.</h2>
-      <p class="lede">Every posting for an Enterprise AI Architect, a Director of AI &amp; Data Management or an
-      Enterprise Data Architect asks the same handful of questions. Here is what I actually think about each —
-      briefly, and with the parts I would argue for.</p>
+      <h2 class="display">My perspective on twelve common enterprise AI and data leadership challenges</h2>
+      <p class="lede">Postings for an Enterprise AI Architect, a Director of AI &amp; Data Management, or an
+      Enterprise Data Architect tend to ask for the same capabilities. These short articles explain the principles
+      I use when making architecture and leadership decisions.</p>
     </div>
     <div class="povgrid rise">{cards}</div>
   </div>
@@ -378,10 +378,10 @@ def contact(profile: dict) -> str:
     return f"""<section class="band contact" id="contact">
   <div class="shell contact__grid">
     <div class="rise">
-      <p class="eyebrow">Next</p>
-      <h2>If the data foundation is the thing standing between you and AI, that is my work.</h2>
+      <p class="eyebrow">Contact</p>
+      <h2>Let&rsquo;s discuss your data and AI architecture</h2>
       <p>Open to Enterprise AI Architect, Director of AI &amp; Data Management, and Enterprise Data Architect
-      roles &mdash; permanent or advisory, remote or Raleigh-based.</p>
+      roles, permanent or advisory, remote or Raleigh-based.</p>
     </div>
     <div class="contact__list rise">
       <a href="mailto:{e(profile['email'])}"><span><span class="k">Email</span><br>{e(profile['email'])}</span>{arrow()}</a>
@@ -407,7 +407,7 @@ def credentials(profile: dict) -> str:
   <div class="shell">
     <div class="band-head rise">
       <p class="eyebrow">Credentials</p>
-      <h2 class="display">Certified where it matters, and honest about the rest.</h2>
+      <h2 class="display">Education and professional credentials</h2>
     </div>
     <div class="creds rise">{rows}</div>
   </div>
@@ -523,7 +523,7 @@ def pov_index(povs: list, profile: dict) -> str:
         head(
             "Perspectives — Ravi Rali",
             "Short points of view on AI strategy, data governance, MDM, agentic AI, "
-            "architecture governance and leading architects.",
+            "architecture governance, and developing architects.",
             "../",
             f"{SITE_URL}/perspectives/index.html",
         )
@@ -532,10 +532,10 @@ def pov_index(povs: list, profile: dict) -> str:
 <section class="povhero">
   <div class="shell">
     <p class="eyebrow">Points of view</p>
-    <h1>What I think, before you ask me in an interview.</h1>
-    <p class="povhero__stand">Twelve short pieces answering the requirements that show up in almost every
-    Enterprise AI Architect, Director of AI &amp; Data Management and Enterprise Data Architect posting.
-    Each one is three minutes, has a position, and is willing to be wrong in public.</p>
+    <h1>Some points of view on frequently asked questions</h1>
+    <p class="povhero__stand">Twelve short pieces on the requirements that recur in Enterprise AI Architect,
+    Director of AI &amp; Data Management, and Enterprise Data Architect postings. Each one takes about three
+    minutes to read and sets out the principles I apply.</p>
     <div class="povmeta"><span>12 pieces</span><span>~3 min each</span><span>Updated {date.today().strftime('%B %Y')}</span></div>
   </div>
 </section>

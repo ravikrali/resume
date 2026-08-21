@@ -7,20 +7,20 @@
     "org": "R2 Digital",
     "location": "Raleigh, NC · Remote",
     "era": "Agentic era",
-    "headline": "Publishing and advising on what actually has to change before an enterprise can run agents.",
-    "context": "Independent advisory and applied research on AI-native data architecture — MDM, data engineering and operating models rebuilt for a world where agents, not dashboards, are the primary consumers of enterprise data. Published as long-form strategy notes.",
+    "headline": "Researching and advising on the data, governance, and operating-model changes required for enterprise AI agents.",
+    "context": "Independent advisory and applied research on AI-native data architecture. The work covers MDM, data engineering, and operating models designed to support AI agents alongside traditional analytics and reporting, published as long-form strategy notes.",
     "outcomes": [
-      { "metric": "5", "unit": "notes", "text": "Published strategy notes covering AI strategy vs. AI theatre, the AI investment ladder, AI-native MDM, data engineering rebuilt by AI, and the hybrid FSO-FSP operating model for CROs." },
-      { "text": "Developed the AI-native MDM thesis — replacing rules-based batch hubs with semantic matching, learned survivorship and event-driven settlement, with an 18-month strangler-fig migration path and a year-2 financial crossover model." },
-      { "text": "Mapped the agentic-era data engineering platform: an agent control plane and a context/semantic plane sitting over lineage, observability, evals, policy and unit cost — with the trust plane sequenced first, not last." },
-      { "text": "Advising leaders on where AI genuinely pays back, and where the honest answer is that the data foundation has to come first." }
+      { "metric": "5", "unit": "notes", "text": "Published strategy notes on AI strategy and measurement, the AI investment ladder, AI-native MDM, AI-assisted data engineering, and the hybrid FSO-FSP operating model for CROs." },
+      { "text": "Developed the AI-native MDM thesis, replacing rules-based batch hubs with semantic matching, learned survivorship, and event-driven settlement, with an 18-month strangler-fig migration path and a year-2 financial crossover model." },
+      { "text": "Mapped the agentic-era data engineering platform: an agent control plane and a context and semantic plane sitting over lineage, observability, evals, policy, and unit cost, with the trust plane sequenced first." },
+      { "text": "Advising leaders on where AI investment pays back, and when organizations should improve their data foundation before investing further in AI." }
     ],
-    "leadership": "Framing complex architecture decisions for executive audiences — vendor reality checks, TCO models and migration sequencing written to be argued with, not admired.",
+    "leadership": "Framing complex architecture decisions for executive audiences through vendor assessments, total-cost models, and migration plans designed to support clear executive decisions.",
     "stack": ["Agentic AI", "Knowledge graphs", "MDM", "Semantic layer", "MCP", "Lakehouse", "Policy-as-code"],
     "links": [
       { "label": "AI-Native MDM thesis", "url": "https://ravikrali.github.io/MDM-AI-Strategy/" },
       { "label": "Data Engineering, Rebuilt by AI", "url": "https://ravikrali.github.io/Data-Engineering/" },
-      { "label": "AI Strategy vs AI Theater", "url": "https://ravikrali.github.io/blogAIStrategy/" }
+      { "label": "Thought Leadership in AI Strategy", "url": "https://ravikrali.github.io/blogAIStrategy/" }
     ]
   },
   {
@@ -31,16 +31,16 @@
     "org": "Parexel International",
     "location": "Raleigh, NC",
     "era": "Agentic era",
-    "headline": "Enterprise AI platform and governance backbone for a top-3 global CRO running trials in 100+ countries.",
-    "context": "Parexel is a $2B+ clinical research organisation. I owned enterprise data strategy, AI architecture and governance across clinical and commercial operations — scoping, pricing, scheduling, project management, finance, forecasting, clinical data management, site and investigator selection, and FSO/FSP resource management.",
+    "headline": "Designed an enterprise AI platform and governance framework for a leading global CRO operating in more than 100 countries.",
+    "context": "Parexel is a $2B+ clinical research organization. I owned enterprise data strategy, AI architecture, and governance across clinical and commercial operations, covering scoping, pricing, scheduling, project management, finance, forecasting, clinical data management, site and investigator selection, and FSO/FSP resource management.",
     "outcomes": [
-      { "metric": "~60", "unit": "%", "text": "Cut analyst research time by architecting and launching an enterprise AI platform using LLM and knowledge-graph technology for intelligent search, protocol summarisation and site/investigator insight across the global study portfolio — accelerating study start-up decisions." },
-      { "text": "Designed a Knowledge LLM pipeline joining structured clinical metadata to unstructured protocol documents through a RAG architecture, letting operational teams query trial intelligence in natural language with governed, auditable data access." },
-      { "metric": "~40", "unit": "%", "text": "Reduced downstream reconciliation effort by architecting the data governance, MDM and data quality roadmap for global clinical operations, enabling audit-ready lineage across multi-study portfolios." },
-      { "metric": "8+", "unit": "domains", "text": "Established an Architecture Review Board governing every data platform investment across eight-plus business domains — preventing costly rework and holding regulatory alignment." },
-      { "text": "Accountable for delivery quality, budget oversight and risk mitigation across the enterprise data and AI architecture portfolio." }
+      { "metric": "~60", "unit": "%", "text": "Reduced analyst research time by architecting and launching an enterprise AI platform using LLM and knowledge-graph technology for intelligent search, protocol summarization, and site and investigator insight across the global study portfolio, which accelerated study start-up decisions." },
+      { "text": "Designed a knowledge-graph and LLM pipeline joining structured clinical metadata to unstructured protocol documents through a RAG architecture, allowing operational teams to query trial intelligence in natural language with governed, auditable data access." },
+      { "metric": "~40", "unit": "%", "text": "Reduced downstream reconciliation effort by architecting the data governance, MDM, and data quality roadmap for global clinical operations, enabling audit-ready lineage across multi-study portfolios." },
+      { "metric": "8+", "unit": "domains", "text": "Established an Architecture Review Board governing data platform investment across eight or more business domains, reducing rework and maintaining regulatory alignment." },
+      { "text": "Accountable for delivery quality, budget oversight, and risk mitigation across the enterprise data and AI architecture portfolio." }
     ],
-    "leadership": "Provided executive-level coaching to senior architects and technical leads on solution quality, stakeholder engagement and enterprise alignment; owned architecture capability maturity and long-term talent strategy across the enterprise data domains.",
+    "leadership": "Coached senior architects and technical leads on solution quality, stakeholder engagement, and enterprise alignment. Owned architecture capability maturity and long-term talent strategy across the enterprise data domains.",
     "stack": ["LLM / RAG", "Knowledge graphs", "MDM", "Data governance", "Architecture Review Board", "TOGAF", "AWS", "Azure", "ICH GCP E6(R3)"],
     "links": []
   },
@@ -52,14 +52,14 @@
     "org": "R2 Data Vision Inc",
     "location": "Remote",
     "era": "Cloud & platform era",
-    "headline": "Technical leadership for a data products startup, and governance blueprints for its clients.",
+    "headline": "Technical leadership for a data products startup and governance blueprints for its clients.",
     "context": "Provided solution architecture guidance and consulting services to a data products company and its enterprise clients across AWS and Azure.",
     "outcomes": [
       { "text": "Designed data lakehouse and operational data store architectures on AWS and Azure, consolidating siloed sources into unified analytics-ready platforms and reducing client time-to-insight from weeks to days." },
-      { "text": "Delivered data governance blueprints — classification frameworks, metadata management and data catalog configurations — giving clients a structured path to regulatory-ready, trustworthy data assets." },
-      { "text": "Advised on data integration pipelines, MDM, data classification and cataloguing as part of end-to-end governance implementation." }
+      { "text": "Delivered data governance blueprints covering classification frameworks, metadata management, and data catalog configurations, giving clients a structured path to regulatory-ready data assets." },
+      { "text": "Advised on data integration pipelines, MDM, data classification, and cataloging as part of end-to-end governance implementation." }
     ],
-    "leadership": "Acted as the senior technical voice for a small company selling into large enterprises — translating client needs into practical architecture guidance and credible delivery estimates.",
+    "leadership": "Acted as the senior technical voice for a small company selling into large enterprises, translating client needs into practical architecture guidance and credible delivery estimates.",
     "stack": ["AWS", "Azure", "Lakehouse", "ODS", "Metadata management", "MDM", "Data catalog"],
     "links": []
   },
@@ -71,16 +71,16 @@
     "org": "KPMG LLP",
     "location": "Raleigh, NC",
     "era": "Cloud & platform era",
-    "headline": "Five years running data management programmes for Fortune 500 clients — architecture, delivery, P&L and the team.",
-    "context": "Senior advisory leader inside KPMG's national data practice. Three jobs at once: technical sales, delivery management and architecture — with teams of 10–15 and full commercial accountability.",
+    "headline": "Five years delivering data management programs for Fortune 500 clients, covering architecture, delivery, commercial ownership, and team leadership.",
+    "context": "Senior advisory leader in KPMG's national data practice, leading teams of 10 to 15. My responsibilities included technical sales, delivery management, architecture, and commercial oversight.",
     "outcomes": [
-      { "metric": "3 wks → 2 days", "unit": "", "text": "Cut business-user time-to-insight and reduced data error rates by 35% by delivering an enterprise Modern Data Platform on Snowflake plus Informatica IDMC (MDM, Data Quality, AXON catalog), giving clients trusted master data and genuine self-service analytics." },
-      { "metric": "~30", "unit": "%", "text": "Reduced compliance remediation cost by architecting an enterprise data governance programme — policy engine, stewardship operating model, DQ KPIs and metadata taxonomy — that let clients pass regulatory audits." },
-      { "metric": "3", "unit": "environments", "text": "Designed and delivered AI/ML Ops solutions for a large automobile manufacturer, building GenAI/RAG-ready data architecture with governed vector store integration and LLM-ready pipelines, adopted across three client production environments." },
-      { "text": "Developed an enterprise policy engine integrating organisational policy, technical metadata, data quality and data privacy requirements into enforceable controls." },
-      { "text": "Built a TOGAF-aligned enterprise data architecture practice — architecture views, roadmaps, review methods and implementation standards — using Spark, Erwin and PowerDesigner for architectural modelling." }
+      { "metric": "3 wks → 2 days", "unit": "", "text": "Reduced business-user time-to-insight and cut data error rates by 35% by delivering an enterprise Modern Data Platform on Snowflake with Informatica IDMC (MDM, Data Quality, AXON catalog), giving clients trusted master data and self-service analytics." },
+      { "metric": "~30", "unit": "%", "text": "Reduced compliance remediation cost by architecting an enterprise data governance program covering a policy engine, stewardship operating model, data quality KPIs, and metadata taxonomy, which helped clients pass regulatory audits." },
+      { "metric": "3", "unit": "environments", "text": "Designed and delivered MLOps solutions for a large automobile manufacturer, building GenAI and RAG-ready data architecture with governed vector store integration and LLM-ready pipelines, adopted in three client production environments." },
+      { "text": "Developed an enterprise policy engine integrating organizational policy, technical metadata, data quality, and data privacy requirements into enforceable controls." },
+      { "text": "Built a TOGAF-aligned enterprise data architecture practice covering architecture views, roadmaps, review methods, and implementation standards, using Spark, Erwin, and PowerDesigner for architectural modeling." }
     ],
-    "leadership": "Managed multi-engagement P&L including margin targets and revenue forecasts; led pricing strategy, effort estimation and proposal financial modelling; owned hiring, workforce planning, interviewing, onboarding and succession planning; ran performance management, mentoring and career development for architects, data engineers and solution leads across onshore and offshore delivery centres and time zones.",
+    "leadership": "Managed multi-engagement P&L including margin targets and revenue forecasts. Led pricing strategy, effort estimation, and proposal financial modeling. Owned hiring, workforce planning, interviewing, onboarding, and succession planning. Ran performance management, mentoring, and career development for architects, data engineers, and solution leads across onshore and offshore delivery centers and time zones.",
     "stack": ["Snowflake", "Informatica IDMC", "Informatica DQ", "AXON", "Enterprise Data Catalog", "Spotfire", "Databricks", "MLOps", "GenAI / RAG", "TOGAF", "Erwin", "PowerDesigner"],
     "links": []
   },
@@ -92,16 +92,16 @@
     "org": "Bank of America (via Insight Global)",
     "location": "Charlotte, NC",
     "era": "Big data & risk era",
-    "headline": "Anti-money-laundering transaction hub, where a false positive costs money and a false negative costs the licence.",
-    "context": "Owned the data integration solution roadmap and architecture for the AML Transaction Hub, analytics, self-service reporting, search analytics and predictive analytics.",
+    "headline": "Anti-money-laundering transaction hub and analytics architecture for a global bank.",
+    "context": "Owned the data integration solution roadmap and architecture for the AML Transaction Hub, analytics, self-service reporting, search analytics, and predictive analytics, supporting AML monitoring where false positives increase review costs and false negatives create significant regulatory risk.",
     "outcomes": [
-      { "metric": "15+", "unit": "sources", "text": "Delivered an AML Transaction Hub integrating fifteen-plus data sources, enabling real-time suspicious activity detection, improving SAR filing accuracy by 30% and meeting OCC/FinCEN regulatory obligations on schedule." },
-      { "metric": "~25", "unit": "%", "text": "Lowered false positive rates in transaction monitoring through automated data cleansing pipelines and an enterprise data governance framework for the AML domain — materially reducing analyst review cost." },
-      { "text": "Established data stewardship roles, policies and procedures; delivered conceptual and logical data models and ran vendor and tooling evaluation for AML and risk data solutions." },
-      { "text": "Led big data architecture and the delivery teams implementing risk, compliance and analytics projects." }
+      { "metric": "15+", "unit": "sources", "text": "Delivered an AML Transaction Hub integrating more than fifteen data sources, enabling real-time suspicious activity detection, improving SAR filing accuracy by 30%, and meeting OCC and FinCEN regulatory obligations on schedule." },
+      { "metric": "~25", "unit": "%", "text": "Lowered false positive rates in transaction monitoring through automated data cleansing pipelines and an enterprise data governance framework for the AML domain, which reduced analyst review cost." },
+      { "text": "Established data stewardship roles, policies, and procedures. Delivered conceptual and logical data models and ran vendor and tooling evaluation for AML and risk data solutions." },
+      { "text": "Led big data architecture and the delivery teams implementing risk, compliance, and analytics projects." }
     ],
-    "leadership": "Bridged compliance officers, model risk, technology and analytics teams — the role required translating regulatory obligation into architecture constraints engineers could actually build against.",
-    "stack": ["Big data", "AML / BSA", "OCC / FinCEN", "Search analytics", "Predictive analytics", "Data governance", "Data modelling"],
+    "leadership": "Worked across compliance officers, model risk, technology, and analytics teams, translating regulatory obligations into architecture constraints that engineering teams could build against.",
+    "stack": ["Big data", "AML / BSA", "OCC / FinCEN", "Search analytics", "Predictive analytics", "Data governance", "Data modeling"],
     "links": []
   },
   {
@@ -112,14 +112,14 @@
     "org": "Easy Meta Hub",
     "location": "Product",
     "era": "Big data & risk era",
-    "headline": "A metadata-driven data hub product — the idea that metadata should be executable, ten years early.",
-    "context": "Architected a software product that let organisations leverage metadata from across their systems to rapidly assemble enterprise data hubs built on enterprise models in a NoSQL database.",
+    "headline": "An early implementation of metadata-driven data-hub architecture.",
+    "context": "Architected a software product that let organizations use metadata from across their systems to assemble enterprise data hubs built on enterprise models in a NoSQL database.",
     "outcomes": [
-      { "text": "Designed a metadata-driven architecture where hub content could be consumed immediately across enterprise patterns — data integration, BI/analytics and microservices — without rebuilding per consumer." },
+      { "text": "Designed a metadata-driven architecture where hub content could be consumed across enterprise patterns including data integration, BI and analytics, and microservices, without rebuilding per consumer." },
       { "text": "Proved out enterprise-model-on-NoSQL patterns for accelerating metadata reuse and data hub assembly." },
-      { "text": "The core premise — that metadata should be runtime infrastructure rather than documentation — is the same argument I now make about the context layer for agentic AI." }
+      { "text": "This work anticipated today's use of metadata as an operational foundation for enterprise AI." }
     ],
-    "leadership": "Owned the product architecture and its technical narrative end to end, in a small-team environment where the architect also has to sell the idea.",
+    "leadership": "Owned the product architecture and its technical narrative end to end in a small-team environment.",
     "stack": ["NoSQL", "Metadata management", "Enterprise data models", "Microservices", "Data integration"],
     "links": []
   },
@@ -131,15 +131,15 @@
     "org": "BCBSNC (NTT Data / R2 Data Vision)",
     "location": "Durham, NC",
     "era": "Big data & risk era",
-    "headline": "The canonical model behind a health insurer's business transformation — and an early bet on graph for MDM.",
-    "context": "Created the vision and led implementation of the enterprise data modelling and integration hub capability at Blue Cross Blue Shield of North Carolina, supporting an enterprise-wide business transformation programme.",
+    "headline": "The canonical data model behind a health insurer's business transformation, with an early application of graph technology to MDM.",
+    "context": "Created the vision and led implementation of the enterprise data modeling and integration hub capability at Blue Cross Blue Shield of North Carolina, supporting an enterprise-wide business transformation program.",
     "outcomes": [
-      { "metric": "20+", "unit": "touchpoints", "text": "Architected the Enterprise Canonical Data Model powering the transformation — consistent data exchange across twenty-plus integration touchpoints, and 40% faster integration builds through reusable canonical patterns." },
-      { "metric": "~35", "unit": "%", "text": "Reduced duplicate master records by pioneering Neo4j graph database for MDM entity resolution — laying the foundation for a scalable enterprise MDM programme." },
-      { "text": "Built canonicals usable across REST services, ETL and messaging integration patterns, rather than a separate model per channel." },
-      { "text": "Ran proofs-of-concept on emerging platforms including Hadoop and graph databases well before either was a default enterprise choice." }
+      { "metric": "20+", "unit": "touchpoints", "text": "Architected the Enterprise Canonical Data Model powering the transformation, supporting consistent data exchange across more than twenty integration touchpoints and reducing integration build time by 40% through reusable canonical patterns." },
+      { "metric": "~35", "unit": "%", "text": "Reduced duplicate master records by applying the Neo4j graph database to MDM entity resolution, which established the foundation for a scalable enterprise MDM program." },
+      { "text": "Built canonicals usable across REST services, ETL, and messaging integration patterns rather than a separate model per channel." },
+      { "text": "Ran proofs-of-concept on Hadoop and graph databases at an early stage of their enterprise adoption." }
     ],
-    "leadership": "Created and led a new enterprise data modelling and integration hub group from scratch — including making the case for its existence.",
+    "leadership": "Created and led a new enterprise data modeling and integration hub group, including the business case for establishing it.",
     "stack": ["Canonical data models", "Neo4j", "Graph MDM", "Hadoop", "REST services", "ETL", "Messaging", "HIPAA"],
     "links": []
   },
@@ -151,13 +151,13 @@
     "org": "Bank of America (via Randstad)",
     "location": "Charlotte, NC",
     "era": "Big data & risk era",
-    "headline": "Data strategy for liquidity risk in the middle of the post-2008 regulatory rebuild.",
+    "headline": "Data strategy and architecture for liquidity risk management during the post-2008 regulatory rebuild.",
     "context": "Defined the vision and roadmap for the data strategy and solutions supporting Liquidity Risk Management systems.",
     "outcomes": [
-      { "text": "Delivered a comprehensive architecture and governance roadmap for liquidity risk data, supporting post-2008 regulatory capital and liquidity reporting with auditable, fit-for-purpose data architecture." },
-      { "text": "Evaluated tools and technologies against regulatory reporting constraints rather than feature lists." }
+      { "text": "Delivered an architecture and governance roadmap for liquidity risk data, supporting post-2008 regulatory capital and liquidity reporting with auditable, fit-for-purpose data architecture." },
+      { "text": "Evaluated tools and technologies against regulatory reporting constraints." }
     ],
-    "leadership": "A short, sharp engagement — brought in to give a risk function a defensible data position under regulatory time pressure.",
+    "leadership": "A short engagement to establish a documented, auditable data position for a risk function under regulatory time pressure.",
     "stack": ["Liquidity risk", "Regulatory reporting", "Data strategy", "Architecture governance"],
     "links": []
   },
@@ -169,14 +169,14 @@
     "org": "Idexcel Inc",
     "location": "Multi-client",
     "era": "Warehouse & BI era",
-    "headline": "Six years where architecture and delivery accountability sat on the same desk.",
-    "context": "Consulting across Duke Energy (IBM), The Hanover Insurance Group, Teradyne and ADP — data architecture, solution architecture, delivery management and programme management.",
+    "headline": "Six years combining architecture ownership with delivery accountability across multiple client accounts.",
+    "context": "Consulting across Duke Energy (IBM), The Hanover Insurance Group, Teradyne, and ADP, covering data architecture, solution architecture, delivery management, and program management.",
     "outcomes": [
-      { "text": "Delivered enterprise data warehousing, BI and analytics, metadata management, MDM, data cleansing, data quality and data governance solutions across financial services, insurance and energy." },
-      { "text": "Carried architecture depth and full delivery-management accountability simultaneously across multi-year engagements — the habit that later made advisory-director work straightforward." },
-      { "text": "Built the client-facing muscle: scoping, estimating, staffing, and then being answerable for the result." }
+      { "text": "Delivered enterprise data warehousing, BI and analytics, metadata management, MDM, data cleansing, data quality, and data governance solutions across financial services, insurance, and energy." },
+      { "text": "Held architecture responsibility and delivery-management accountability at the same time across multi-year engagements." },
+      { "text": "Developed experience in client scoping, estimation, staffing, and delivery accountability." }
     ],
-    "leadership": "Programme and delivery management across concurrent client accounts, including the uncomfortable part — owning the estimate you produced.",
+    "leadership": "Program and delivery management across concurrent client accounts, including ownership of the estimates I produced.",
     "stack": ["Enterprise DW", "BI & analytics", "MDM", "Data quality", "Metadata management", "Data governance"],
     "links": []
   },
@@ -188,14 +188,14 @@
     "org": "Tata Consultancy Services",
     "location": "India / US",
     "era": "Warehouse & BI era",
-    "headline": "Where the people-leadership half of the career was built — running a practice, not just a project.",
+    "headline": "This role marked my transition from project delivery into regional practice leadership.",
     "context": "Started in delivery and moved into regional practice leadership for the Business Intelligence and Data Warehousing practice.",
     "outcomes": [
-      { "text": "Ran client relationship management, account management, pre-sales and sales, resource management, recruiting, training, pipeline planning and budgeting for the regional BI/DW practice." },
-      { "text": "Built packaged domain solution offerings for financial services, insurance, life sciences and government verticals — reusable IP rather than bespoke every time." },
-      { "text": "Owned mentoring and performance reviews for practice staff, at the point in a career where most architects are still avoiding people management." }
+      { "text": "Ran client relationship management, account management, pre-sales and sales, resource management, recruiting, training, pipeline planning, and budgeting for the regional BI and data warehousing practice." },
+      { "text": "Built packaged domain solution offerings for financial services, insurance, life sciences, and government verticals." },
+      { "text": "Owned mentoring and performance reviews for practice staff while continuing to contribute to architecture and client delivery." }
     ],
-    "leadership": "This is where the leadership track started: hiring, developing and being accountable for a practice's people and its pipeline at the same time.",
+    "leadership": "Hiring, developing, and holding accountability for the practice's people and its pipeline.",
     "stack": ["BI & data warehousing", "Practice leadership", "Pre-sales", "Financial services", "Insurance", "Life sciences", "Government"],
     "links": []
   }

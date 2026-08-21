@@ -3,20 +3,20 @@
     {
       "id": "technical",
       "kicker": "Pillar 01",
-      "title": "Technical depth",
-      "lede": "I still design the thing. Reference architectures, canonical models, graph schemas, retrieval pipelines and governance controls — not slideware about them.",
+      "title": "Technical expertise",
+      "lede": "I remain directly involved in designing reference architectures, canonical models, graph schemas, retrieval pipelines, and governance controls.",
       "groups": [
         {
           "name": "Enterprise & solution architecture",
-          "items": ["TOGAF-based architecture governance", "Target-state architecture & roadmaps", "Reference architectures & patterns", "Architecture Review Boards", "Design assurance & standards", "Architecture views & modelling", "Vendor & platform evaluation", "Build / buy / fine-tune decisions"]
+          "items": ["TOGAF-based architecture governance", "Target-state architecture & roadmaps", "Reference architectures & patterns", "Architecture Review Boards", "Design assurance & standards", "Architecture views & modeling", "Vendor & platform evaluation", "Build, buy, and fine-tune decisions"]
         },
         {
           "name": "AI & machine learning",
-          "items": ["Agentic AI workflows & autonomy tiers", "RAG architecture & retrieval evaluation", "Knowledge graphs & semantic modelling", "Enterprise LLM platform architecture", "Governed vector stores", "MLOps & model lifecycle", "AI governance & model risk", "Evals & guardrails", "MCP / tool surfaces for agents"]
+          "items": ["Agentic AI workflows & autonomy tiers", "RAG architecture & retrieval evaluation", "Knowledge graphs & semantic modeling", "Enterprise LLM platform architecture", "Governed vector stores", "MLOps & model lifecycle", "AI governance & model risk", "Evals & guardrails", "MCP and tool surfaces for agents"]
         },
         {
           "name": "Data management & governance",
-          "items": ["Enterprise data strategy", "Data governance operating models", "Master Data Management (MDM)", "Entity resolution & survivorship", "Data quality frameworks & DQ KPIs", "Metadata management & data catalogs", "Column-level lineage", "Stewardship models", "Canonical & enterprise data modelling", "Data products, mesh & fabric", "Policy-as-code & privacy controls"]
+          "items": ["Enterprise data strategy", "Data governance operating models", "Master Data Management (MDM)", "Entity resolution & survivorship", "Data quality frameworks & DQ KPIs", "Metadata management & data catalogs", "Column-level lineage", "Stewardship models", "Canonical & enterprise data modeling", "Data products, mesh & fabric", "Policy-as-code & privacy controls"]
         },
         {
           "name": "Platforms, cloud & engineering",
@@ -31,8 +31,8 @@
     {
       "id": "leadership",
       "kicker": "Pillar 02",
-      "title": "People & management",
-      "lede": "Twenty-five years of hiring, growing, mentoring and being answerable for teams — and for the numbers attached to them. The architecture is only half the job.",
+      "title": "Leadership & people management",
+      "lede": "More than 25 years of hiring, developing, and mentoring teams, with accountability for delivery quality and commercial results.",
       "groups": [
         {
           "name": "Building & growing teams",
@@ -40,19 +40,19 @@
         },
         {
           "name": "Executive engagement",
-          "items": ["C-suite workshops & discovery", "Business-to-technology translation", "Business case & investment narrative", "Board-ready roadmaps", "Stakeholder alignment across business, IT & data science", "Advisory leadership", "Presenting bad news early"]
+          "items": ["C-suite workshops & discovery", "Business-to-technology translation", "Business case & investment narrative", "Board-ready roadmaps", "Stakeholder alignment across business, IT & data science", "Advisory leadership", "Early escalation of delivery risk"]
         },
         {
           "name": "Commercial ownership",
-          "items": ["Engagement P&L", "Budget oversight & margin targets", "Revenue forecasting", "Effort estimation & solution costing", "Pricing strategy", "Proposal financial modelling", "Pre-sales & technical sales", "Vendor & partner relationships"]
+          "items": ["Engagement P&L", "Budget oversight & margin targets", "Revenue forecasting", "Effort estimation & solution costing", "Pricing strategy", "Proposal financial modeling", "Pre-sales & technical sales", "Vendor & partner relationships"]
         },
         {
           "name": "Delivery leadership",
-          "items": ["Programme & portfolio management", "Delivery quality accountability", "Risk mitigation & escalation", "Global onshore / offshore delivery", "Cross-time-zone team leadership", "Multi-engagement portfolios", "Decommission accountability"]
+          "items": ["Program & portfolio management", "Delivery quality accountability", "Risk mitigation & escalation", "Global onshore / offshore delivery", "Cross-time-zone team leadership", "Multi-engagement portfolios", "Decommission accountability"]
         },
         {
           "name": "How I lead",
-          "items": ["Influence without authority", "High-performance, accountable delivery culture", "Design decisions made in the open", "Teach the pattern, not the answer", "Governance that speeds teams up", "Leave capability behind, not dependency"]
+          "items": ["Influence without authority", "Accountable delivery culture", "Design decisions made in the open", "Coaching through patterns and trade-offs", "Governance designed to support delivery speed", "Building lasting team capability"]
         }
       ]
     }

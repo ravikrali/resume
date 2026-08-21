@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The semantic layer is the layer everyone skips and everyone needs — Ravi Rali</title>
-<meta name="description" content="Natural-language querying over raw physical tables produces fluent nonsense. The fix is unglamorous: one governed definition of each entity and metric, plus a graph for the relationships.">
+<title>The semantic layer in retrieval and knowledge graph design — Ravi Rali</title>
+<meta name="description" content="Natural-language querying over raw physical tables produces fluent answers with unreliable numbers. One governed definition of each entity and metric, plus a graph for the relationships, is what fixes it.">
 <link rel="canonical" href="https://ravikrali.github.io/resume/perspectives/knowledge-graphs-rag.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="The semantic layer is the layer everyone skips and everyone needs — Ravi Rali">
-<meta property="og:description" content="Natural-language querying over raw physical tables produces fluent nonsense. The fix is unglamorous: one governed definition of each entity and metric, plus a graph for the relationships.">
+<meta property="og:title" content="The semantic layer in retrieval and knowledge graph design — Ravi Rali">
+<meta property="og:description" content="Natural-language querying over raw physical tables produces fluent answers with unreliable numbers. One governed definition of each entity and metric, plus a graph for the relationships, is what fixes it.">
 <meta property="og:url" content="https://ravikrali.github.io/resume/perspectives/knowledge-graphs-rag.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0d2340">
@@ -41,8 +41,8 @@
   <div class="shell">
     <p class="eyebrow"><a href="index.html" style="text-decoration:none">Perspectives</a></p>
     <div class="povhero__num" aria-hidden="true">05</div>
-    <h1>The semantic layer is the layer everyone skips and everyone needs</h1>
-    <p class="povhero__stand">Natural-language querying over raw physical tables produces fluent nonsense. The fix is unglamorous: one governed definition of each entity and metric, plus a graph for the relationships.</p>
+    <h1>The semantic layer in retrieval and knowledge graph design</h1>
+    <p class="povhero__stand">Natural-language querying over raw physical tables produces fluent answers with unreliable numbers. One governed definition of each entity and metric, plus a graph for the relationships, is what fixes it.</p>
     <div class="povmeta">
       <span>Enterprise AI Architect &middot; Enterprise Data Architect</span>
       <span>Point of view</span>
@@ -56,28 +56,28 @@
     <p class="reqcard__v">&ldquo;Design RAG, knowledge graph and semantic search architectures&rdquo;</p>
   </div>
 
-  <p class="position">Retrieval quality is a data modelling problem wearing an AI costume.</p>
+  <p class="position">Retrieval quality is largely a data modeling problem.</p>
 
-  <div class="prose"><section><h2>Why vector search alone falls short</h2><p>Embedding similarity finds passages that read like the question. It does not know that a study has sites, that sites have investigators, that investigators have prior enrolment performance, and that the question &quot;which sites should we consider&quot; requires traversing all three.</p>
-<p>Multi-hop questions need structure. That is what a knowledge graph provides, and it is why the strongest enterprise implementations are hybrid: graph for relationships, vector for language, both governed.</p></section><section><h2>What I built at Parexel</h2><p>A knowledge LLM pipeline joining structured clinical metadata to unstructured protocol documents through a RAG architecture — so operational teams could ask questions in natural language and get governed, auditable answers about a global study portfolio. Intelligent search, protocol summarisation, site and investigator insight. Analyst research time fell by roughly 60%.</p>
-<p>The part that made it work was not the retrieval strategy. It was that clinical metadata had already been mastered and the semantic relationships were explicit.</p></section><section><h2>Design rules I hold to</h2><p>Agents query the semantic layer, never the physical schema. Extraction, classification and embedding are governed pipeline stages that inherit lineage and policy like any table. Retrieval accuracy is measured with an eval harness, per use case, and tracked over time — because retrieval silently degrades as the corpus grows.</p></section></div>
+  <div class="prose"><section><h2>Why vector search alone falls short</h2><p>Embedding similarity finds passages that read like the question. It does not encode that a study has sites, that sites have investigators, and that investigators have prior enrollment performance. The question &quot;which sites should we consider&quot; requires traversing all three.</p>
+<p>Multi-hop questions need structure, which is what a knowledge graph provides. The stronger enterprise implementations are hybrid: graph for relationships, vector for language, both governed.</p></section><section><h2>What I built at Parexel</h2><p>A knowledge-graph and LLM pipeline joining structured clinical metadata to unstructured protocol documents through a RAG architecture, so operational teams could ask questions in natural language and receive governed, auditable answers about a global study portfolio. It covered intelligent search, protocol summarization, and site and investigator insight, and reduced analyst research time by around 60%.</p>
+<p>The determining factor was not the retrieval strategy. It was that clinical metadata had already been mastered and the semantic relationships were explicit.</p></section><section><h2>Design rules I hold to</h2><p>Agents query the semantic layer rather than the physical schema. Extraction, classification, and embedding are governed pipeline stages that inherit lineage and policy in the same way as tables. Retrieval accuracy is measured with an eval harness per use case and tracked over time, because retrieval quality degrades quietly as a corpus grows.</p></section></div>
 
   <div class="twoup">
     <div class="twoup__col">
       <h3>How I apply it</h3>
-      <ul class="ticklist"><li>Model entities and relationships first; choose the retrieval strategy second</li><li>Hybrid retrieval — graph traversal plus permission-aware vector search</li><li>Treat the vector index as a governed data asset with an owner</li><li>Build the eval harness in the first sprint, not after the complaints</li></ul>
+      <ul class="ticklist"><li>Model entities and relationships first, then choose the retrieval strategy</li><li>Use hybrid retrieval: graph traversal plus permission-aware vector search</li><li>Treat the vector index as a governed data asset with a named owner</li><li>Build the eval harness in the first sprint</li></ul>
     </div>
     <div class="twoup__col">
       <h3>What good looks like</h3>
-      <ul class="ticklist"><li>The same metric definition serves the dashboard and the agent</li><li>Retrieval precision is a tracked number with a trend line</li><li>Answers cite their source documents and a user can open them</li><li>Access control holds when the same question is asked by two different people</li></ul>
+      <ul class="ticklist"><li>The same metric definition serves the dashboard and the agent</li><li>Retrieval precision is a tracked number with a trend line</li><li>Answers cite their source documents and a user can open them</li><li>Access control holds when the same question is asked by different users</li></ul>
     </div>
   </div>
 
   
 
   <nav class="pager" aria-label="More perspectives">
-    <a href="agentic-ai.html"><span class="k">Previous</span><span class="t">Autonomy is a spectrum you configure, not a switch you flip</span></a>
-    <a href="data-governance.html"><span class="k">Next</span><span class="t">Governance should make teams faster, or it has failed</span></a>
+    <a href="agentic-ai.html"><span class="k">Previous</span><span class="t">Defining autonomy boundaries for AI agents</span></a>
+    <a href="data-governance.html"><span class="k">Next</span><span class="t">Data governance that supports delivery</span></a>
   </nav>
 </section>
 </main>
