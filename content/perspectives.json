@@ -1,0 +1,547 @@
+[
+  {
+    "slug": "ai-strategy",
+    "num": "01",
+    "title": "AI strategy is a portfolio decision, not a technology decision",
+    "requirement": "Define and drive the enterprise AI strategy and roadmap",
+    "roles": ["Enterprise AI Architect", "Director, AI & Data Management"],
+    "standfirst": "Most AI strategies fail at problem selection, not at model selection. The work is choosing which expensive, repetitive workflows deserve funding — and being willing to say no to the rest.",
+    "position": "Start from a costly workflow, not from a capability you want to use.",
+    "sections": [
+      {
+        "h": "The failure mode",
+        "p": [
+          "Programmes that begin with \"we should use AI\" behave differently from programmes that begin with \"this process costs us £4m a year and three people hate it.\" The second kind survives its first bad demo. The first kind becomes AI theatre — visible, well-attended, and structurally unable to prove it was worth anything.",
+          "Roughly 88% of organisations now use AI somewhere. Only about a quarter of initiatives hit their expected return. The gap is almost never the model."
+        ]
+      },
+      {
+        "h": "What I actually do",
+        "p": [
+          "I run AI strategy as six repeating moves: problem selection, platform fit, direction (customer-facing versus internal), governance and risk, adoption, and measurement. Each has a gate. A use case that cannot name its baseline metric before build does not get funded.",
+          "Platform fit matters more than people expect. Generative, agentic and classical ML solve genuinely different problems. Forecasting and demand planning are not LLM problems. Multi-step transactional work is not a RAG problem. Getting this wrong is how you end up in the 40% of agentic projects Gartner expects to be cancelled by 2027."
+        ]
+      },
+      {
+        "h": "The uncomfortable part",
+        "p": [
+          "Internal-facing AI is usually the better first bet and always the less glamorous one. It is a lower-stakes environment to build organisational fluency, and it is reversible. Customer-facing AI is visible, which means its failures are also visible and hard to walk back."
+        ]
+      }
+    ],
+    "apply": [
+      "Inventory workflows by cost and repetition before discussing technology at all",
+      "Assign each candidate a platform class — generative, agentic, or classical ML — and justify it",
+      "Run two tracks with separate measurement: outward-facing and inward-facing",
+      "Gate funding on a small, fixed KPI set agreed before the first sprint"
+    ],
+    "signals": [
+      "Every funded use case has a named business owner and a measured pre-build baseline",
+      "At least one use case has been killed at a gate — a portfolio with no failures is not being measured",
+      "Run cost is budgeted alongside build cost",
+      "Leadership can say what the AI portfolio is for in one sentence"
+    ],
+    "links": [
+      { "label": "Full note: What Separates AI Strategy from AI Theater", "url": "https://ravikrali.github.io/blogAIStrategy/" }
+    ]
+  },
+  {
+    "slug": "ai-roi",
+    "num": "02",
+    "title": "If you cannot measure it, you are not investing — you are hoping",
+    "requirement": "Own the business case and demonstrate measurable value from AI investment",
+    "roles": ["Director, AI & Data Management", "Enterprise AI Architect"],
+    "standfirst": "79% of organisations report productivity gains from AI. About 29% can confidently measure the return. That gap is where most programmes quietly die.",
+    "position": "Set the baseline before you build, budget the run cost, and re-measure at every stage.",
+    "sections": [
+      {
+        "h": "Why AI ROI is genuinely hard",
+        "p": [
+          "It is not simply that finance teams are being difficult. AI value is diffuse — spread across efficiency, decision quality, error reduction and risk prevention simultaneously, which single-metric ROI models cannot capture. It compounds slowly, with organisations now expecting satisfactory return in two to four years rather than the seven-to-twelve-month payback typical of conventional IT.",
+          "And a great deal of the value is prevention. Anomaly detection creates value by stopping things happening, which is structurally harder to put in a spreadsheet than new revenue."
+        ]
+      },
+      {
+        "h": "The investment ladder",
+        "p": [
+          "I right-size spend against the problem using six rungs: use features already in your existing software; call a frontier model by API; run RAG over your proprietary data; self-host a smaller model; fine-tune; build a foundation model. Best returns concentrate overwhelmingly in the first three rungs. Custom foundation models are almost never justified outside a handful of organisations.",
+          "Most enterprises are still, correctly, in buy-and-integrate territory. The discipline is refusing to climb the ladder for reasons of prestige."
+        ]
+      },
+      {
+        "h": "What I insist on",
+        "p": [
+          "Separate hard ROI from soft ROI and track both, but be honest that only hard ROI appears in the P&L. Budget monitoring, retraining, governance and human review as ongoing cost — unbudgeted run cost is one of the most common reasons finance leaders say they cannot demonstrate AI return."
+        ]
+      }
+    ],
+    "apply": [
+      "Define the metric and measure the baseline before a line of code is written",
+      "Model total cost of ownership including evals, human review and retraining",
+      "Re-measure at experimentation, integration and scale — not just at launch",
+      "Track payback period, adoption rate and quality as three separate gates"
+    ],
+    "signals": [
+      "Payback modelled per use case, not for \"AI\" as a category",
+      "Weekly active usage above 60% for tools claimed to be adopted",
+      "Cost-per-outcome tracked against the human baseline it replaced",
+      "Someone can name what was decommissioned because of the new system"
+    ],
+    "links": [
+      { "label": "Full note: The AI Investment Decision Guide", "url": "https://ravikrali.github.io/blogAIInvestmentGuide/" }
+    ]
+  },
+  {
+    "slug": "ai-ready-data",
+    "num": "03",
+    "title": "There is no AI strategy without a data strategy",
+    "requirement": "Ensure enterprise data is AI-ready and fit for GenAI and agentic consumption",
+    "roles": ["Enterprise AI Architect", "Enterprise Data Architect", "Director, AI & Data Management"],
+    "standfirst": "Roughly 15% of organisations have data foundations adequate for agentic AI. The other 85% are buying agents and skipping the context they need to be right.",
+    "position": "Metadata, lineage, quality, MDM and semantics are not prerequisites you can defer — they are the product.",
+    "sections": [
+      {
+        "h": "The constraint is not the model",
+        "p": [
+          "Frontier models are commodity infrastructure now. What is not commodity is whether your organisation can tell an agent, in machine-readable form, what \"active study\", \"customer\" or \"revenue\" means, who is allowed to see which attribute, and how fresh the answer is.",
+          "An agent pointed at an undocumented physical schema does not fail loudly. It produces confident, well-formatted, wrong answers — which is considerably worse."
+        ]
+      },
+      {
+        "h": "AI-ready means six specific things",
+        "p": [
+          "Machine-consumable metadata rather than a wiki with a search box. Column-level lineage that runs end to end. Quality expectations learned from actual distributions, not assertions someone imagined in 2019. Mastered entities so the agent resolves to one customer. A semantic layer where each metric is defined once. And access control inherited from the source, so retrieval cannot leak what the user could not otherwise open.",
+          "Permission leakage through vector stores is the single most common security failure I see in enterprise RAG. Documents get embedded; their access control does not come with them."
+        ]
+      },
+      {
+        "h": "Sequencing",
+        "p": [
+          "Build the trust plane before the agent plane. Teams adopt AI authoring roughly three times faster than AI verification — which means shipping defects faster too. If a roadmap places the semantic layer in \"a later phase\", the roadmap is wrong."
+        ]
+      }
+    ],
+    "apply": [
+      "Treat the semantic layer and data contracts as Phase 1 deliverables, never Phase 3",
+      "Govern vector indexes exactly like tables — lineage, classification, retention, access",
+      "Inherit retrieval permissions from source documents, always",
+      "Instrument evals on every AI-executed pipeline step"
+    ],
+    "signals": [
+      "Critical metrics are defined once and consumed by BI and agents from the same place",
+      "The catalog can be queried by a machine at execution time",
+      "Retrieval quality is measured, not assumed",
+      "A regulator could be shown how an AI answer was derived"
+    ],
+    "links": [
+      { "label": "Related: Data Engineering, Rebuilt by AI", "url": "https://ravikrali.github.io/Data-Engineering/" }
+    ]
+  },
+  {
+    "slug": "agentic-ai",
+    "num": "04",
+    "title": "Autonomy is a spectrum you configure, not a switch you flip",
+    "requirement": "Architect agentic AI solutions with appropriate guardrails and human oversight",
+    "roles": ["Enterprise AI Architect", "Director, AI & Data Management"],
+    "standfirst": "Agentic systems carry a fundamentally different risk profile from static models, because they write as well as read. The architecture question is not \"can it act\" but \"what may it do unattended.\"",
+    "position": "Define, per workflow, what the agent does unattended, what needs approval, and what is never automated.",
+    "sections": [
+      {
+        "h": "The three-tier boundary",
+        "p": [
+          "For every agentic workflow I write down three lists. Unattended: retries, schema re-inference, enrichment, classification proposals. Requires approval: any logic change, any policy change, anything that alters a published number. Never automated: deletion, policy override, access grants, anything irreversible without a recovery path.",
+          "This is boring, and it is the entire difference between an agent programme that survives its first incident and one that does not."
+        ]
+      },
+      {
+        "h": "Earn autonomy, don't assume it",
+        "p": [
+          "Every agent starts in propose-only mode. It moves to bounded auto-apply only after a clean proposal record over a meaningful sample — not after a good demo. Confidence thresholds are risk-tiered: the bar for merging two customer records in a marketing database is not the bar for merging them in a regulated safety database.",
+          "Logging, oversight and audit capability go in before agents touch real systems, not after the first finding."
+        ]
+      },
+      {
+        "h": "Where agents genuinely earn their keep",
+        "p": [
+          "Multi-step transactional work that needs tool-calling and write access. Autonomous incident response — detect, correlate across lineage, hypothesise, validate in a sandbox, present for approval. Legacy logic archaeology, parsing old ETL metadata to recover business rules nobody documented. These are high-leverage because the human bottleneck was never the typing."
+        ]
+      }
+    ],
+    "apply": [
+      "Write the autonomy boundary per pipeline before the agent is built",
+      "Run propose-only first; graduate on evidence, with a documented threshold",
+      "Give every agent an audit trail a compliance officer can read",
+      "Keep humans on the loop for policy and edge cases, off the loop for routine work"
+    ],
+    "signals": [
+      "You can produce the autonomy matrix for any agent in production",
+      "Steward queues shrink over time because the system learns",
+      "Incidents produce retrievable context, not just resolved tickets",
+      "Nobody is surprised by what an agent did"
+    ],
+    "links": []
+  },
+  {
+    "slug": "knowledge-graphs-rag",
+    "num": "05",
+    "title": "The semantic layer is the layer everyone skips and everyone needs",
+    "requirement": "Design RAG, knowledge graph and semantic search architectures",
+    "roles": ["Enterprise AI Architect", "Enterprise Data Architect"],
+    "standfirst": "Natural-language querying over raw physical tables produces fluent nonsense. The fix is unglamorous: one governed definition of each entity and metric, plus a graph for the relationships.",
+    "position": "Retrieval quality is a data modelling problem wearing an AI costume.",
+    "sections": [
+      {
+        "h": "Why vector search alone falls short",
+        "p": [
+          "Embedding similarity finds passages that read like the question. It does not know that a study has sites, that sites have investigators, that investigators have prior enrolment performance, and that the question \"which sites should we consider\" requires traversing all three.",
+          "Multi-hop questions need structure. That is what a knowledge graph provides, and it is why the strongest enterprise implementations are hybrid: graph for relationships, vector for language, both governed."
+        ]
+      },
+      {
+        "h": "What I built at Parexel",
+        "p": [
+          "A knowledge LLM pipeline joining structured clinical metadata to unstructured protocol documents through a RAG architecture — so operational teams could ask questions in natural language and get governed, auditable answers about a global study portfolio. Intelligent search, protocol summarisation, site and investigator insight. Analyst research time fell by roughly 60%.",
+          "The part that made it work was not the retrieval strategy. It was that clinical metadata had already been mastered and the semantic relationships were explicit."
+        ]
+      },
+      {
+        "h": "Design rules I hold to",
+        "p": [
+          "Agents query the semantic layer, never the physical schema. Extraction, classification and embedding are governed pipeline stages that inherit lineage and policy like any table. Retrieval accuracy is measured with an eval harness, per use case, and tracked over time — because retrieval silently degrades as the corpus grows."
+        ]
+      }
+    ],
+    "apply": [
+      "Model entities and relationships first; choose the retrieval strategy second",
+      "Hybrid retrieval — graph traversal plus permission-aware vector search",
+      "Treat the vector index as a governed data asset with an owner",
+      "Build the eval harness in the first sprint, not after the complaints"
+    ],
+    "signals": [
+      "The same metric definition serves the dashboard and the agent",
+      "Retrieval precision is a tracked number with a trend line",
+      "Answers cite their source documents and a user can open them",
+      "Access control holds when the same question is asked by two different people"
+    ],
+    "links": []
+  },
+  {
+    "slug": "data-governance",
+    "num": "06",
+    "title": "Governance should make teams faster, or it has failed",
+    "requirement": "Establish enterprise data governance frameworks, policies and stewardship",
+    "roles": ["Director, AI & Data Management", "Enterprise Data Architect"],
+    "standfirst": "Governance built as a permission queue gets routed around. Governance built as paved roads, defaults and machine-readable policy gets used, because it is the path of least resistance.",
+    "position": "Encode the policy so the platform enforces it, and reserve human judgement for genuine ambiguity.",
+    "sections": [
+      {
+        "h": "The committee trap",
+        "p": [
+          "Most data governance programmes are org charts with a policy PDF attached. They produce a council, a glossary nobody reads, and a stewardship queue that grows faster than it clears — because the system never learns from what the stewards decide.",
+          "The measure of a governance programme is not how many policies exist. It is whether a data engineer shipping something on Tuesday hits a guardrail automatically, or has to remember one."
+        ]
+      },
+      {
+        "h": "Policy as code",
+        "p": [
+          "At KPMG I built an enterprise policy engine that integrated organisational policy, technical metadata, data quality and privacy requirements into controls the platform could actually enforce. Classification drives access. Retention drives lifecycle. Quality thresholds drive whether a build passes. Nobody has to consult a document.",
+          "That programme cut compliance remediation cost by around 30%, and the mechanism was straightforward: fewer decisions left to memory."
+        ]
+      },
+      {
+        "h": "Stewardship as adjudication",
+        "p": [
+          "Stewards should not be clearing queues of near-identical tasks. They should be setting policy, resolving genuinely ambiguous cases, and approving rules proposed in plain language — with the system learning from each decision so the same class of case does not return. That is a role elevation, not a headcount reduction, and it needs to be framed that way to the people doing it."
+        ]
+      }
+    ],
+    "apply": [
+      "Define DQ dimensions, thresholds and KPIs tied to business consequence, not abstract quality",
+      "Make classification, retention and access machine-enforced at the platform layer",
+      "Design steward workflows around active learning so queues shrink by construction",
+      "Publish a decision-rights matrix — who decides, who is consulted, who is informed"
+    ],
+    "signals": [
+      "Engineers can name the guardrails without looking them up",
+      "Stewardship queue size trends down, not up",
+      "Audit evidence is generated, not assembled in a panic",
+      "Governance is invoked in design reviews by delivery teams, unprompted"
+    ],
+    "links": []
+  },
+  {
+    "slug": "mdm-ai-native",
+    "num": "07",
+    "title": "Traditional MDM is now the bottleneck between you and agentic AI",
+    "requirement": "Lead Master Data Management strategy, platform selection and implementation",
+    "roles": ["Director, AI & Data Management", "Enterprise Data Architect"],
+    "standfirst": "MDM hubs were optimised for a 2010 enterprise: rules authored upfront, batch reconciliation overnight, stewards clearing queues. Every one of those assumptions breaks when agents are the consumer.",
+    "position": "Models propose truth, events settle it, and stewards adjudicate policy — not transactions.",
+    "sections": [
+      {
+        "h": "Three shifts",
+        "p": [
+          "From rules to models: humans encoding match and survivorship logic upfront gives way to semantic matching and learned, attribute-level survivorship. Traditional fuzzy matching scores around 37% F1 on entity-resolution benchmarks; an LLM adjudicating the ambiguous band gets past 95% precision.",
+          "From batch to events: nightly reconciliation means the golden record is always at least 24 hours stale. Event-driven settlement means it is current by construction.",
+          "From queues to judgement: stewards move from unbounded task lists to a curated set of high-value exceptions, with the system learning from each decision."
+        ]
+      },
+      {
+        "h": "The economics change direction",
+        "p": [
+          "Traditional MDM has an ascending cost curve — per-master-row licensing punishes you for mastering more data, and steward headcount scales with volume. AI-native MDM front-loads engineering investment and then declines as models absorb stewardship volume. Crossover typically lands in year two; by year three the annual cost runs 30–40% below the traditional trajectory.",
+          "Every Gartner Leader still prices on volume. That is worth knowing before you sign a three-year renewal."
+        ]
+      },
+      {
+        "h": "How to get there without a rewrite",
+        "p": [
+          "Strangler fig, over roughly 18 months. Diagnose and baseline against ground truth. Run shadow resolution in parallel at zero production risk. Put one bounded domain into production with conservative autonomy thresholds. Expand domain by domain behind an anti-corruption layer. Then activate AI-first consumption and decommission.",
+          "Do not port the legacy rules. Use them as test cases. And set the legacy exit date in phase two — permanent hybrids are the most expensive outcome available."
+        ]
+      }
+    ],
+    "apply": [
+      "Establish ground truth and measure the incumbent before proposing a replacement",
+      "Four-stage resolution: embedding blocking, fast classifier, LLM adjudication, steward exception",
+      "Migrate against the renewal calendar for contractual leverage",
+      "Commit a decommission date with an accountable executive"
+    ],
+    "signals": [
+      "Match precision and recall are measured against ground truth, not asserted",
+      "Stewards can explain a merge to a compliance officer in plain language",
+      "Golden records are exposed as a real-time API and event stream, not a nightly extract",
+      "Unit cost per mastered record is falling"
+    ],
+    "links": [
+      { "label": "Full thesis: The AI-Native MDM Thesis", "url": "https://ravikrali.github.io/MDM-AI-Strategy/" }
+    ]
+  },
+  {
+    "slug": "data-engineering",
+    "num": "08",
+    "title": "Half your data engineering capacity is defensive. That is the opportunity.",
+    "requirement": "Modernise the enterprise data platform and data engineering function",
+    "roles": ["Enterprise Data Architect", "Director, AI & Data Management"],
+    "standfirst": "Roughly 53% of data engineering capacity goes to maintaining and troubleshooting what already exists, with schema drift the single largest category. This is a capacity reallocation, not a cost-cutting exercise.",
+    "position": "Pipelines you specify, behaviour that adapts, context as the deliverable — and the trust plane built first.",
+    "sections": [
+      {
+        "h": "Six inversions",
+        "p": [
+          "Pipelines you write become pipelines you specify. Rules anticipated in advance become behaviour learned and adapted. Tables as the deliverable become context as the deliverable. Structured-only becomes multimodal by default. Batch-anchored freshness becomes continuous by default. Humans in every loop become humans on the loop.",
+          "None of this is speculative any more — Databricks Lakeflow, Snowflake smart pipelines and Fabric's agent-authorable Data Factory all shipped agentic capability at GA in 2026."
+        ]
+      },
+      {
+        "h": "The highest-return change available",
+        "p": [
+          "Treat schema as observed state — versioned and diffed — rather than pinned at build time. Drift gets classified automatically as additive, renamed or semantic, and an agent proposes the mapping with a confidence score. Schema drift moves from \"breaks the pipeline at 3am\" to \"raises a reviewable proposal.\"",
+          "That one change addresses the largest single category of the maintenance tax."
+        ]
+      },
+      {
+        "h": "The failure mode to avoid",
+        "p": [
+          "The dbt State of Analytics Engineering 2026 data is blunt: 72% prioritise AI-assisted coding, 24% prioritise AI-assisted pipeline management, and 71% name incorrect outputs reaching stakeholders as a top concern. Generating pipelines four times faster without matching testing and observability generates defects four times faster too.",
+          "Sequence the trust plane — lineage, observability, learned quality monitors, eval harnesses, audit — before the authoring agents. It is the least popular recommendation I make and the one that matters most."
+        ]
+      }
+    ],
+    "apply": [
+      "Phase 0 is measurement: harvest metadata, build the real dependency graph, quantify the maintenance tax",
+      "One lighthouse domain end to end, proven at numerical parity across a full business cycle including period-end",
+      "Declarative pipelines with contract enforcement — breaking changes fail at build",
+      "Cost attributed per pipeline, per data product, per consumer"
+    ],
+    "signals": [
+      "Share of capacity spent firefighting is a tracked, falling number",
+      "Freshness for decision-driving domains measured in minutes, not the nightly window",
+      "Column-level lineage covers a growing share of the estate",
+      "Legacy platforms actually get switched off"
+    ],
+    "links": [
+      { "label": "Full note: Data Engineering, Rebuilt by AI", "url": "https://ravikrali.github.io/Data-Engineering/" }
+    ]
+  },
+  {
+    "slug": "architecture-governance",
+    "num": "09",
+    "title": "An architecture review board should remove decisions, not add meetings",
+    "requirement": "Establish architecture governance, standards, guardrails and design assurance",
+    "roles": ["Enterprise Data Architect", "Enterprise AI Architect"],
+    "standfirst": "Teams resent review boards that gate. They use review boards that decide things once so nobody has to decide them again.",
+    "position": "Govern the small number of decisions that are expensive to reverse. Delegate the rest, in writing.",
+    "sections": [
+      {
+        "h": "What belongs in front of a board",
+        "p": [
+          "Choices that are expensive to reverse: platform selection, integration patterns, data ownership boundaries, security and access models, anything that creates a new system of record. Everything else should be pre-decided by a published standard or explicitly delegated.",
+          "At Parexel I established an ARB governing every data platform investment across eight-plus business domains. Its value was not the meeting — it was that a team could look up the answer for 80% of situations and only bring the genuinely novel 20%."
+        ]
+      },
+      {
+        "h": "Reference architectures beat review cycles",
+        "p": [
+          "A paved-road template that already satisfies the standard is worth more than a reviewer who catches violations. The right instinct after a review finds a recurring problem is to change the template, not to add a checklist item.",
+          "TOGAF is useful here as a scaffold, not scripture. I have customised it every time — the deliverable set that helps a CRO is not the one that helps a bank."
+        ]
+      },
+      {
+        "h": "How I run reviews",
+        "p": [
+          "Written proposal first, decisions recorded with their rationale, and a standing rule that a rejected design leaves with a named alternative. Reviewers who cannot propose an alternative are giving an opinion, not a decision.",
+          "And architects present, not project managers. If the person who made the trade-off cannot explain it, the trade-off was not made."
+        ]
+      }
+    ],
+    "apply": [
+      "Publish a decision-rights matrix separating board decisions from delegated ones",
+      "Maintain reference architectures and golden-path templates as the primary control",
+      "Record decisions with rationale so the same debate does not recur annually",
+      "Measure the board on cycle time as well as on rework prevented"
+    ],
+    "signals": [
+      "Most submissions are approved quickly because the standard was clear beforehand",
+      "Teams cite the reference architecture without being asked to",
+      "Time-to-decision is measured in days",
+      "Rework attributable to architectural surprise is falling"
+    ],
+    "links": []
+  },
+  {
+    "slug": "regulated-ai",
+    "num": "10",
+    "title": "In a regulated environment, explainability is an architecture requirement",
+    "requirement": "Deliver AI and data solutions within regulated, audited environments",
+    "roles": ["Enterprise AI Architect", "Director, AI & Data Management", "Enterprise Data Architect"],
+    "standfirst": "Life sciences, banking and healthcare do not ask whether the answer was right. They ask how it was derived, who could see the inputs, and whether you can show them that in six months.",
+    "position": "Design the evidence trail at the same time as the capability — retrofitting it costs several times more.",
+    "sections": [
+      {
+        "h": "Where I have had to do this",
+        "p": [
+          "AML transaction monitoring at Bank of America under OCC and FinCEN obligations, where a false negative is a licence problem. Liquidity risk reporting in the post-2008 rebuild. HIPAA-bound canonical models at a health insurer. Clinical operations at a top-three CRO under FDA 21 CFR Part 11 and ICH GCP E6(R3).",
+          "The pattern holds across all of them: the regulator's real question is about lineage and control, not about accuracy claims."
+        ]
+      },
+      {
+        "h": "What that means for AI design",
+        "p": [
+          "Retrieval must inherit source access control, so an answer never surfaces what the asker could not open. Every AI-executed step needs an eval and an audit record. Model risk needs the same treatment as any other model in the estate — documented, monitored for drift, with a named owner.",
+          "E6(R3), effective July 2025, requires continuous auditable sponsor oversight of delegated activity. That turns connected data infrastructure and real-time visibility from a nice-to-have into an economic necessity."
+        ]
+      },
+      {
+        "h": "The advantage nobody expects",
+        "p": [
+          "Regulated constraints produce better architecture. Lineage you built for an auditor is the same lineage that lets an agent explain itself. Classification you built for privacy is the same classification that stops permission leakage through a vector store. The compliance work and the AI-readiness work are largely the same work."
+        ]
+      }
+    ],
+    "apply": [
+      "Map the regulatory obligation to specific architecture constraints, in writing, up front",
+      "Generate audit evidence automatically from lineage and execution metadata",
+      "Treat every AI component as a model under model-risk governance",
+      "Prove parity across a full business cycle, including period-end, before decommissioning anything"
+    ],
+    "signals": [
+      "An audit request is answered from the platform, not from a spreadsheet exercise",
+      "Access decisions are traceable to a policy, not to a person's memory",
+      "Drift and eval results are reviewed on a governance cadence",
+      "Compliance is consulted at design time and is not surprised at go-live"
+    ],
+    "links": []
+  },
+  {
+    "slug": "leading-architects",
+    "num": "11",
+    "title": "The job is building architects, not being the architect",
+    "requirement": "Lead, mentor and grow a team of architects and technical leads",
+    "roles": ["Director, AI & Data Management", "Enterprise AI Architect"],
+    "standfirst": "A senior architect who makes every decision creates a team that cannot make any. The measure of the role is what the organisation can decide well without you in the room.",
+    "position": "Teach the pattern and the trade-off, not the answer.",
+    "sections": [
+      {
+        "h": "What I have actually run",
+        "p": [
+          "Teams of 10–15 architects, data engineers and solution leads at KPMG with full P&L, plus hiring, workforce planning, interviewing, onboarding, succession planning, performance management and career development. Before that, a regional BI and data warehousing practice at TCS with responsibility for recruiting, training, mentoring and the pipeline.",
+          "At Parexel the shape changed — executive-level coaching for senior architects and technical leads on solution quality, stakeholder engagement and enterprise alignment, plus ownership of architecture capability maturity and long-term talent strategy."
+        ]
+      },
+      {
+        "h": "How I coach",
+        "p": [
+          "Design decisions get made in the open, with the reasoning visible. A junior architect who watches you weigh three options and pick one learns more than one handed the conclusion. When I review a design I ask what was considered and rejected — if the answer is nothing, that is the coaching conversation.",
+          "Stakeholder engagement is a teachable skill and most technical leads are never taught it. Sitting a senior engineer next to me in an executive workshop, then debriefing what landed and what did not, has produced more growth than any training course I have sent people on."
+        ]
+      },
+      {
+        "h": "The unglamorous half",
+        "p": [
+          "Performance management done properly, career paths that do not require becoming a manager, succession planning before someone resigns, and telling people the truth early. Global onshore and offshore teams add a layer — you have to design for time zones deliberately rather than expecting goodwill to absorb it."
+        ]
+      }
+    ],
+    "apply": [
+      "Pair senior technical staff into executive conversations, then debrief",
+      "Review the alternatives considered, not just the design chosen",
+      "Maintain a technical career track that does not force people into management",
+      "Plan succession for every critical role before it becomes urgent"
+    ],
+    "signals": [
+      "Designs get better before they reach you",
+      "People are promoted from within the team",
+      "Architects can defend a trade-off to an executive without you present",
+      "Attrition is low among the people you most want to keep"
+    ],
+    "links": []
+  },
+  {
+    "slug": "operating-model",
+    "num": "12",
+    "title": "Most data programmes fail on ownership, not on technology",
+    "requirement": "Define the target operating model for data and AI across the enterprise",
+    "roles": ["Director, AI & Data Management", "Enterprise Data Architect"],
+    "standfirst": "Unclear ownership, absent leadership direction and poor upstream requirements outrank technical debt as constraints. If nobody owns customer data, no architecture fixes it.",
+    "position": "Ownership, decision rights and decommission accountability are Phase 0 deliverables, not change-management afterthoughts.",
+    "sections": [
+      {
+        "h": "The question I ask first",
+        "p": [
+          "Who is accountable — by name, not by function — for the quality of this domain's data? In most organisations the honest answer is nobody, or a committee, which is the same answer. Everything downstream of that gap is expensive.",
+          "The second question: what gets switched off when this is delivered? Programmes without a decommission commitment produce permanent hybrids, two cost lines and two versions of the truth."
+        ]
+      },
+      {
+        "h": "Structure follows consumption",
+        "p": [
+          "Whether you land on mesh, fabric, a central platform team or a federated model matters far less than whether the boundaries follow how the business actually consumes data. Domain ownership works where domains are real and have leaders with budget. It fails where \"domain\" is a slide.",
+          "Run the platform as a product: named owners, published SLAs, unit economics, and a governance cadence for cost, quality and evals matching the rigour of financial close."
+        ]
+      },
+      {
+        "h": "Roles shift, and you have to say so",
+        "p": [
+          "Data engineers move from pipeline authors to platform and context owners. Stewards move from clearing queues to adjudicating ambiguity. That is a genuine elevation, but only if it is framed and resourced as one. Framed as efficiency, it reads as a threat and gets resisted — and roughly a third of workers already admit to quietly resisting AI tools.",
+          "Adoption is a people problem. A working prototype nobody uses returns exactly zero."
+        ]
+      }
+    ],
+    "apply": [
+      "Name accountable owners per domain before designing anything",
+      "Publish decision rights across business, platform and governance",
+      "Commit decommission dates with an accountable executive attached",
+      "Fund role redefinition and skills uplift as a workstream, not as a footnote"
+    ],
+    "signals": [
+      "Every critical domain has a named owner who would be called first",
+      "The platform publishes SLAs and its own unit economics",
+      "Legacy systems are actually retired on the dates committed",
+      "Adoption is measured, and low adoption triggers a response"
+    ],
+    "links": [
+      { "label": "Related: The AI-Powered Hybrid FSO-FSP Operating Model", "url": "https://ravikrali.github.io/Hybrid-FSO-FSP-Business-Strategy/" }
+    ]
+  }
+]

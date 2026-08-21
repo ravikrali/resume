@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The semantic layer is the layer everyone skips and everyone needs — Ravi Rali</title>
+<meta name="description" content="Natural-language querying over raw physical tables produces fluent nonsense. The fix is unglamorous: one governed definition of each entity and metric, plus a graph for the relationships.">
+<link rel="canonical" href="https://ravikrali.github.io/resume/perspectives/knowledge-graphs-rag.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The semantic layer is the layer everyone skips and everyone needs — Ravi Rali">
+<meta property="og:description" content="Natural-language querying over raw physical tables produces fluent nonsense. The fix is unglamorous: one governed definition of each entity and metric, plus a graph for the relationships.">
+<meta property="og:url" content="https://ravikrali.github.io/resume/perspectives/knowledge-graphs-rag.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d2340">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="shell masthead__in">
+    <a class="brand" href="../index.html">
+      Ravi&nbsp;Rali
+      <span class="brand__mark">Enterprise AI &amp; Data</span>
+    </a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="../index.html#value">Value</a>
+      <a href="../index.html#roadmap">Roadmap</a>
+      <a href="../index.html#skills">Skills</a>
+      <a class="nav-keep" href="../perspectives/index.html" aria-current="page">Perspectives</a>
+      <a class="btn" href="../index.html#contact">Get in touch <svg class="arw" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="povhero">
+  <div class="shell">
+    <p class="eyebrow"><a href="index.html" style="text-decoration:none">Perspectives</a></p>
+    <div class="povhero__num" aria-hidden="true">05</div>
+    <h1>The semantic layer is the layer everyone skips and everyone needs</h1>
+    <p class="povhero__stand">Natural-language querying over raw physical tables produces fluent nonsense. The fix is unglamorous: one governed definition of each entity and metric, plus a graph for the relationships.</p>
+    <div class="povmeta">
+      <span>Enterprise AI Architect &middot; Enterprise Data Architect</span>
+      <span>Point of view</span>
+    </div>
+  </div>
+</section>
+
+<section class="shell" style="padding-bottom:clamp(3rem,7vw,6rem)">
+  <div class="reqcard">
+    <p class="reqcard__k">The requirement this answers</p>
+    <p class="reqcard__v">&ldquo;Design RAG, knowledge graph and semantic search architectures&rdquo;</p>
+  </div>
+
+  <p class="position">Retrieval quality is a data modelling problem wearing an AI costume.</p>
+
+  <div class="prose"><section><h2>Why vector search alone falls short</h2><p>Embedding similarity finds passages that read like the question. It does not know that a study has sites, that sites have investigators, that investigators have prior enrolment performance, and that the question &quot;which sites should we consider&quot; requires traversing all three.</p>
+<p>Multi-hop questions need structure. That is what a knowledge graph provides, and it is why the strongest enterprise implementations are hybrid: graph for relationships, vector for language, both governed.</p></section><section><h2>What I built at Parexel</h2><p>A knowledge LLM pipeline joining structured clinical metadata to unstructured protocol documents through a RAG architecture — so operational teams could ask questions in natural language and get governed, auditable answers about a global study portfolio. Intelligent search, protocol summarisation, site and investigator insight. Analyst research time fell by roughly 60%.</p>
+<p>The part that made it work was not the retrieval strategy. It was that clinical metadata had already been mastered and the semantic relationships were explicit.</p></section><section><h2>Design rules I hold to</h2><p>Agents query the semantic layer, never the physical schema. Extraction, classification and embedding are governed pipeline stages that inherit lineage and policy like any table. Retrieval accuracy is measured with an eval harness, per use case, and tracked over time — because retrieval silently degrades as the corpus grows.</p></section></div>
+
+  <div class="twoup">
+    <div class="twoup__col">
+      <h3>How I apply it</h3>
+      <ul class="ticklist"><li>Model entities and relationships first; choose the retrieval strategy second</li><li>Hybrid retrieval — graph traversal plus permission-aware vector search</li><li>Treat the vector index as a governed data asset with an owner</li><li>Build the eval harness in the first sprint, not after the complaints</li></ul>
+    </div>
+    <div class="twoup__col">
+      <h3>What good looks like</h3>
+      <ul class="ticklist"><li>The same metric definition serves the dashboard and the agent</li><li>Retrieval precision is a tracked number with a trend line</li><li>Answers cite their source documents and a user can open them</li><li>Access control holds when the same question is asked by two different people</li></ul>
+    </div>
+  </div>
+
+  
+
+  <nav class="pager" aria-label="More perspectives">
+    <a href="agentic-ai.html"><span class="k">Previous</span><span class="t">Autonomy is a spectrum you configure, not a switch you flip</span></a>
+    <a href="data-governance.html"><span class="k">Next</span><span class="t">Governance should make teams faster, or it has failed</span></a>
+  </nav>
+</section>
+</main>
+<footer class="footer">
+  <div class="shell footer__in">
+    <span>&copy; <span data-year>2026</span> Ravi Kiran Rali</span>
+    <span>Built as a static site &middot; <a href="https://github.com/ravikrali/resume">source</a></span>
+    <span><a href="https://www.linkedin.com/in/ravirali">LinkedIn</a> &middot; <a href="mailto:rali.rk@gmail.com">Email</a></span>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

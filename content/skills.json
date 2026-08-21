@@ -1,0 +1,60 @@
+{
+  "pillars": [
+    {
+      "id": "technical",
+      "kicker": "Pillar 01",
+      "title": "Technical depth",
+      "lede": "I still design the thing. Reference architectures, canonical models, graph schemas, retrieval pipelines and governance controls — not slideware about them.",
+      "groups": [
+        {
+          "name": "Enterprise & solution architecture",
+          "items": ["TOGAF-based architecture governance", "Target-state architecture & roadmaps", "Reference architectures & patterns", "Architecture Review Boards", "Design assurance & standards", "Architecture views & modelling", "Vendor & platform evaluation", "Build / buy / fine-tune decisions"]
+        },
+        {
+          "name": "AI & machine learning",
+          "items": ["Agentic AI workflows & autonomy tiers", "RAG architecture & retrieval evaluation", "Knowledge graphs & semantic modelling", "Enterprise LLM platform architecture", "Governed vector stores", "MLOps & model lifecycle", "AI governance & model risk", "Evals & guardrails", "MCP / tool surfaces for agents"]
+        },
+        {
+          "name": "Data management & governance",
+          "items": ["Enterprise data strategy", "Data governance operating models", "Master Data Management (MDM)", "Entity resolution & survivorship", "Data quality frameworks & DQ KPIs", "Metadata management & data catalogs", "Column-level lineage", "Stewardship models", "Canonical & enterprise data modelling", "Data products, mesh & fabric", "Policy-as-code & privacy controls"]
+        },
+        {
+          "name": "Platforms, cloud & engineering",
+          "items": ["Snowflake", "Databricks", "Informatica IDMC — MDM, DQ, AXON, EDC", "AWS", "Azure", "Neo4j", "Lakehouse & open table formats", "Operational data stores", "Streaming & CDC", "Microservices & API architecture", "Erwin / PowerDesigner", "Spotfire", "Hadoop / Spark", "Cloud security & IAM", "FinOps & unit economics"]
+        },
+        {
+          "name": "Regulated-environment architecture",
+          "items": ["FDA 21 CFR Part 11", "ICH GCP E6(R3)", "HIPAA", "AML / BSA — OCC & FinCEN", "Liquidity risk reporting", "Audit-ready lineage & evidence", "Data classification & sovereignty"]
+        }
+      ]
+    },
+    {
+      "id": "leadership",
+      "kicker": "Pillar 02",
+      "title": "People & management",
+      "lede": "Twenty-five years of hiring, growing, mentoring and being answerable for teams — and for the numbers attached to them. The architecture is only half the job.",
+      "groups": [
+        {
+          "name": "Building & growing teams",
+          "items": ["Hiring & workforce planning", "Interviewing & onboarding", "Succession planning", "Career development & progression paths", "Performance management", "Mentoring & coaching senior architects", "Architecture capability maturity", "Skills uplift & role redefinition"]
+        },
+        {
+          "name": "Executive engagement",
+          "items": ["C-suite workshops & discovery", "Business-to-technology translation", "Business case & investment narrative", "Board-ready roadmaps", "Stakeholder alignment across business, IT & data science", "Advisory leadership", "Presenting bad news early"]
+        },
+        {
+          "name": "Commercial ownership",
+          "items": ["Engagement P&L", "Budget oversight & margin targets", "Revenue forecasting", "Effort estimation & solution costing", "Pricing strategy", "Proposal financial modelling", "Pre-sales & technical sales", "Vendor & partner relationships"]
+        },
+        {
+          "name": "Delivery leadership",
+          "items": ["Programme & portfolio management", "Delivery quality accountability", "Risk mitigation & escalation", "Global onshore / offshore delivery", "Cross-time-zone team leadership", "Multi-engagement portfolios", "Decommission accountability"]
+        },
+        {
+          "name": "How I lead",
+          "items": ["Influence without authority", "High-performance, accountable delivery culture", "Design decisions made in the open", "Teach the pattern, not the answer", "Governance that speeds teams up", "Leave capability behind, not dependency"]
+        }
+      ]
+    }
+  ]
+}

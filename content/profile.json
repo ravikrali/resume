@@ -1,0 +1,54 @@
+{
+  "name": "Ravi Kiran Rali",
+  "shortName": "Ravi Rali",
+  "titles": ["Enterprise AI Architect", "Director, AI & Data Management", "Enterprise Data Architect"],
+  "tagline": "I turn regulated, fragmented data estates into governed platforms that enterprises — and their AI agents — can actually trust.",
+  "location": "Raleigh, North Carolina · Remote / US",
+  "email": "rali.rk@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/ravirali",
+  "github": "https://github.com/ravikrali",
+  "resumePdf": "Ravi_Rali.pdf",
+  "photo": "assets/img/ravi.jpg",
+  "summary": [
+    "Enterprise data and AI architecture leader with 25+ years turning complex, regulated data environments into governed platforms, reusable data products, and executable transformation roadmaps — across life sciences and CRO operations, financial services, healthcare, insurance, energy, and consulting.",
+    "My work sits at the seam most organisations struggle with: deep enough in architecture to design the canonical model, the knowledge graph, the RAG pipeline and the governance controls — and senior enough to run the P&L, build the team, and get a C-suite to fund a multi-year programme. Recently that has meant launching an enterprise AI platform over a global clinical trial portfolio, and building the metadata, lineage and MDM foundations that make agentic AI defensible in a regulated environment."
+  ],
+  "metrics": [
+    { "figure": "25+", "unit": "yrs", "label": "Enterprise data, architecture & delivery leadership" },
+    { "figure": "~60", "unit": "%", "label": "Analyst research time removed by enterprise AI platform at Parexel" },
+    { "figure": "10–15", "unit": "", "label": "Architects, engineers & solution leads led, with full P&L" },
+    { "figure": "3", "unit": "", "label": "Heavily regulated industries: life sciences, financial services, healthcare" }
+  ],
+  "value": [
+    {
+      "num": "01",
+      "title": "AI-ready enterprise data",
+      "body": "I design the data foundations GenAI, RAG and agentic workflows actually run on — metadata, lineage, quality, MDM, semantics and access control — so AI answers can be trusted, explained and audited.",
+      "proof": "Knowledge-graph + LLM platform over a global study portfolio; governed vector store patterns adopted across 3 client production environments."
+    },
+    {
+      "num": "02",
+      "title": "Executive strategy made executable",
+      "body": "I run the workshops that convert an executive vision into a target-state architecture, a sequenced roadmap, an implementation backlog and delivery governance a team can start on Monday.",
+      "proof": "Executive workshops that secured C-suite approval for multi-year data programmes at Fortune 500 clients."
+    },
+    {
+      "num": "03",
+      "title": "Risk-aware modernisation",
+      "body": "Cloud, lakehouse, integration and governance architecture that clears regulatory, privacy, security and operational-reliability bars — designed in, not bolted on after audit findings.",
+      "proof": "AML transaction hub meeting OCC/FinCEN obligations on schedule; audit-ready lineage across multi-study clinical portfolios."
+    },
+    {
+      "num": "04",
+      "title": "Teams that outlast the programme",
+      "body": "I build architecture capability, not dependency — hiring, mentoring, review boards, standards and career paths that leave an organisation able to make good design decisions without me in the room.",
+      "proof": "Architecture Review Board governing data platform investment across 8+ business domains; coaching senior architects and technical leads."
+    }
+  ],
+  "credentials": [
+    { "title": "TOGAF Certified Enterprise Architect", "org": "The Open Group", "year": "2016" },
+    { "title": "Business Strategy for Competitive Advantage & Connected Strategy", "org": "The Wharton School", "year": "2020" },
+    { "title": "PMP Certified", "org": "Project Management Institute", "year": "2003–2007" },
+    { "title": "B.Tech, Chemical Engineering", "org": "Sri Venkateswara College of Engineering, Tirupati, India", "year": "1996" }
+  ]
+}

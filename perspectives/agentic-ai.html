@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autonomy is a spectrum you configure, not a switch you flip — Ravi Rali</title>
+<meta name="description" content="Agentic systems carry a fundamentally different risk profile from static models, because they write as well as read. The architecture question is not &quot;can it act&quot; but &quot;what may it do unattended.&quot;">
+<link rel="canonical" href="https://ravikrali.github.io/resume/perspectives/agentic-ai.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Autonomy is a spectrum you configure, not a switch you flip — Ravi Rali">
+<meta property="og:description" content="Agentic systems carry a fundamentally different risk profile from static models, because they write as well as read. The architecture question is not &quot;can it act&quot; but &quot;what may it do unattended.&quot;">
+<meta property="og:url" content="https://ravikrali.github.io/resume/perspectives/agentic-ai.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d2340">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="shell masthead__in">
+    <a class="brand" href="../index.html">
+      Ravi&nbsp;Rali
+      <span class="brand__mark">Enterprise AI &amp; Data</span>
+    </a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="../index.html#value">Value</a>
+      <a href="../index.html#roadmap">Roadmap</a>
+      <a href="../index.html#skills">Skills</a>
+      <a class="nav-keep" href="../perspectives/index.html" aria-current="page">Perspectives</a>
+      <a class="btn" href="../index.html#contact">Get in touch <svg class="arw" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="povhero">
+  <div class="shell">
+    <p class="eyebrow"><a href="index.html" style="text-decoration:none">Perspectives</a></p>
+    <div class="povhero__num" aria-hidden="true">04</div>
+    <h1>Autonomy is a spectrum you configure, not a switch you flip</h1>
+    <p class="povhero__stand">Agentic systems carry a fundamentally different risk profile from static models, because they write as well as read. The architecture question is not &quot;can it act&quot; but &quot;what may it do unattended.&quot;</p>
+    <div class="povmeta">
+      <span>Enterprise AI Architect &middot; Director, AI &amp; Data Management</span>
+      <span>Point of view</span>
+    </div>
+  </div>
+</section>
+
+<section class="shell" style="padding-bottom:clamp(3rem,7vw,6rem)">
+  <div class="reqcard">
+    <p class="reqcard__k">The requirement this answers</p>
+    <p class="reqcard__v">&ldquo;Architect agentic AI solutions with appropriate guardrails and human oversight&rdquo;</p>
+  </div>
+
+  <p class="position">Define, per workflow, what the agent does unattended, what needs approval, and what is never automated.</p>
+
+  <div class="prose"><section><h2>The three-tier boundary</h2><p>For every agentic workflow I write down three lists. Unattended: retries, schema re-inference, enrichment, classification proposals. Requires approval: any logic change, any policy change, anything that alters a published number. Never automated: deletion, policy override, access grants, anything irreversible without a recovery path.</p>
+<p>This is boring, and it is the entire difference between an agent programme that survives its first incident and one that does not.</p></section><section><h2>Earn autonomy, don&#x27;t assume it</h2><p>Every agent starts in propose-only mode. It moves to bounded auto-apply only after a clean proposal record over a meaningful sample — not after a good demo. Confidence thresholds are risk-tiered: the bar for merging two customer records in a marketing database is not the bar for merging them in a regulated safety database.</p>
+<p>Logging, oversight and audit capability go in before agents touch real systems, not after the first finding.</p></section><section><h2>Where agents genuinely earn their keep</h2><p>Multi-step transactional work that needs tool-calling and write access. Autonomous incident response — detect, correlate across lineage, hypothesise, validate in a sandbox, present for approval. Legacy logic archaeology, parsing old ETL metadata to recover business rules nobody documented. These are high-leverage because the human bottleneck was never the typing.</p></section></div>
+
+  <div class="twoup">
+    <div class="twoup__col">
+      <h3>How I apply it</h3>
+      <ul class="ticklist"><li>Write the autonomy boundary per pipeline before the agent is built</li><li>Run propose-only first; graduate on evidence, with a documented threshold</li><li>Give every agent an audit trail a compliance officer can read</li><li>Keep humans on the loop for policy and edge cases, off the loop for routine work</li></ul>
+    </div>
+    <div class="twoup__col">
+      <h3>What good looks like</h3>
+      <ul class="ticklist"><li>You can produce the autonomy matrix for any agent in production</li><li>Steward queues shrink over time because the system learns</li><li>Incidents produce retrievable context, not just resolved tickets</li><li>Nobody is surprised by what an agent did</li></ul>
+    </div>
+  </div>
+
+  
+
+  <nav class="pager" aria-label="More perspectives">
+    <a href="ai-ready-data.html"><span class="k">Previous</span><span class="t">There is no AI strategy without a data strategy</span></a>
+    <a href="knowledge-graphs-rag.html"><span class="k">Next</span><span class="t">The semantic layer is the layer everyone skips and everyone needs</span></a>
+  </nav>
+</section>
+</main>
+<footer class="footer">
+  <div class="shell footer__in">
+    <span>&copy; <span data-year>2026</span> Ravi Kiran Rali</span>
+    <span>Built as a static site &middot; <a href="https://github.com/ravikrali/resume">source</a></span>
+    <span><a href="https://www.linkedin.com/in/ravirali">LinkedIn</a> &middot; <a href="mailto:rali.rk@gmail.com">Email</a></span>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
