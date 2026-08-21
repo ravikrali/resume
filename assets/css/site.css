@@ -1271,3 +1271,80 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   .contact { background: #fff; color: #000; border-top: 2px solid #000; }
   .contact h2, .contact p { color: #000; }
 }
+
+/* --------- 14. Writing / published --------------------------------------- */
+
+.writing { border-top: 1px solid var(--navy); }
+
+.writ {
+  display: grid;
+  grid-template-columns: minmax(0, 8.5rem) minmax(0, 1fr);
+  gap: .9rem 2.5rem;
+  padding: 1.9rem 1.1rem 1.9rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  transition: background .28s var(--ease), padding-left .28s var(--ease);
+}
+.writ:hover { background: var(--surface); padding-left: 1.1rem; }
+@media (max-width: 720px) {
+  .writ { grid-template-columns: 1fr; gap: .5rem; }
+  .writ:hover { padding-left: 0; }
+}
+
+.writ__meta { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; }
+@media (max-width: 720px) { .writ__meta { flex-direction: row; align-items: center; gap: .8rem; } }
+
+.writ__date {
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--flame);
+}
+.writ__kind {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border: 1px solid var(--rule);
+  padding: .2rem .45rem;
+  border-radius: 2px;
+}
+
+.writ__title {
+  font-family: var(--display);
+  font-variation-settings: "opsz" 30, "SOFT" 10;
+  font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+  line-height: 1.24;
+  color: var(--navy);
+}
+.writ__title a { text-decoration: none; transition: color .2s var(--ease); }
+.writ__title a:hover { color: var(--flame); }
+
+.writ__desc {
+  font-size: var(--t-sm);
+  line-height: 1.62;
+  color: var(--ink-2);
+  margin-top: .7rem;
+  max-width: 70ch;
+}
+
+.writ__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.6rem;
+  margin-top: 1rem;
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  letter-spacing: .04em;
+}
+.writ__links a {
+  color: var(--flame);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: baseline;
+  gap: .45rem;
+}
+.writ__links a:hover { text-decoration: underline; }
+.writ__links a.is-secondary { color: var(--ink-3); }
+.writ__links a.is-secondary:hover { color: var(--navy); }

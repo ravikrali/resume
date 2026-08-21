@@ -14,7 +14,9 @@ Static HTML/CSS/JS. No frameworks, no npm, no CI. GitHub Pages can serve the rep
 | Career **roadmap** — 10 milestones, click any one to expand | `index.html#roadmap` |
 | Skills — technical depth and people/management, side by side | `index.html#skills` |
 | 12 **point-of-view** pages answering common job requirements | `perspectives/` |
-| Credentials and contact | `index.html#credentials`, `#contact` |
+| Credentials | `index.html#credentials` |
+| **Writing** — recent LinkedIn articles and posts, each with a short description | `index.html#writing` |
+| Contact | `index.html#contact` |
 
 ## Editing the content
 
@@ -26,6 +28,7 @@ All copy lives in `content/*.json`. Nothing is hard-coded in the HTML.
 | `content/roadmap.json` | Roadmap milestones — role, org, dates, context, outcomes, leadership note, tech stack, links |
 | `content/skills.json` | The two skill pillars and their groups |
 | `content/perspectives.json` | The 12 perspective pages |
+| `content/writing.json` | LinkedIn articles and posts listed in the Writing section |
 
 Then regenerate:
 
@@ -42,6 +45,24 @@ Append an object to `content/roadmap.json`. Items render newest-first, so put ne
 An outcome with a `metric` renders the number large in accent red; one without renders as a plain bullet. Keep three or four metric outcomes per role at most — they lose force in a crowd.
 
 `era` groups milestones under a divider, and `yearShort` positions the dot on the timeline ribbon.
+
+### Adding a LinkedIn article or post
+
+Add an object to the **top** of `content/writing.json` (newest first) and rebuild:
+
+```json
+{
+  "kind": "Article",
+  "date": "Sep 2026",
+  "dateFull": "3 September 2026",
+  "title": "Post title as published",
+  "description": "Two or three sentences on what the piece argues.",
+  "url": "https://www.linkedin.com/pulse/...",
+  "source": { "label": "Full note", "url": "https://ravikrali.github.io/..." }
+}
+```
+
+`kind` is a free-text label rendered as a small tag, so `Article`, `Post`, or `Talk` all work. `source` is optional and points at the longer write-up behind the post; omit the key entirely if there isn't one.
 
 ### Adding a perspective
 

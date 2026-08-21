@@ -115,6 +115,7 @@ def masthead(base: str, profile: dict, current: str = "") -> str:
       <a href="{base}index.html#value">Value</a>
       <a href="{base}index.html#roadmap">Roadmap</a>
       <a href="{base}index.html#skills">Skills</a>
+      <a href="{base}index.html#writing">Writing</a>
       <a class="nav-keep" href="{base}perspectives/index.html"{mark('pov')}>Perspectives</a>
       <a class="btn" href="{base}index.html#contact">Get in touch {arrow()}</a>
     </nav>
@@ -415,6 +416,41 @@ def credentials(profile: dict) -> str:
 """
 
 
+def writing(items: list) -> str:
+    rows = "".join(
+        f"""<article class="writ">
+          <div class="writ__meta">
+            <span class="writ__date">{e(w['date'])}</span>
+            <span class="writ__kind">{e(w['kind'])}</span>
+          </div>
+          <div>
+            <h3 class="writ__title">
+              <a href="{e(w['url'])}" target="_blank" rel="noopener">{e(w['title'])}</a>
+            </h3>
+            <p class="writ__desc">{e(w['description'])}</p>
+            <p class="writ__links">
+              <a href="{e(w['url'])}" target="_blank" rel="noopener">{arrow('ext')} Read on LinkedIn</a>
+              {f'<a class="is-secondary" href="{e(w["source"]["url"])}" target="_blank" rel="noopener">{arrow("ext")} {e(w["source"]["label"])}</a>' if w.get('source') else ''}
+            </p>
+          </div>
+        </article>"""
+        for w in items
+    )
+
+    return f"""<section class="band" id="writing">
+  <div class="shell">
+    <div class="band-head rise">
+      <p class="eyebrow">Writing</p>
+      <h2 class="display">Recent articles and posts</h2>
+      <p class="lede">Published on LinkedIn, with the longer research notes they draw on. Each one works
+      through a problem I have run into on an engagement rather than a general commentary.</p>
+    </div>
+    <div class="writing rise">{rows}</div>
+  </div>
+</section>
+"""
+
+
 def jsonld(profile: dict) -> str:
     data = {
         "@context": "https://schema.org",
@@ -557,6 +593,7 @@ def build() -> None:
     rm_items = load("roadmap.json")
     skill_data = load("skills.json")
     povs = load("perspectives.json")
+    writing_items = load("writing.json")
 
     POV_DIR.mkdir(exist_ok=True)
 
@@ -576,6 +613,7 @@ def build() -> None:
         + skills(skill_data)
         + pov_teaser(povs)
         + credentials(profile)
+        + writing(writing_items)
         + contact(profile)
         + "</main>"
         + footer("", profile)
