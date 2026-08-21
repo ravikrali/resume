@@ -429,7 +429,7 @@ def writing(items: list) -> str:
             </h3>
             <p class="writ__desc">{e(w['description'])}</p>
             <p class="writ__links">
-              <a href="{e(w['url'])}" target="_blank" rel="noopener">{arrow('ext')} Read on LinkedIn</a>
+              <a href="{e(w['url'])}" target="_blank" rel="noopener">{arrow('ext')} {e(w.get('linkLabel', 'Read on LinkedIn'))}</a>
               {f'<a class="is-secondary" href="{e(w["source"]["url"])}" target="_blank" rel="noopener">{arrow("ext")} {e(w["source"]["label"])}</a>' if w.get('source') else ''}
             </p>
           </div>
@@ -440,10 +440,11 @@ def writing(items: list) -> str:
     return f"""<section class="band" id="writing">
   <div class="shell">
     <div class="band-head rise">
-      <p class="eyebrow">Writing</p>
-      <h2 class="display">Recent articles and posts</h2>
-      <p class="lede">Published on LinkedIn, with the longer research notes they draw on. Each one works
-      through a problem I have run into on an engagement rather than a general commentary.</p>
+      <p class="eyebrow">Writing &amp; prototypes</p>
+      <h2 class="display">Recent articles, posts, and a working prototype</h2>
+      <p class="lede">Published on LinkedIn, alongside the longer research notes behind them and a dashboard
+      prototype of the hybrid CRO operating model. Each one works through a problem I have run into on an
+      engagement.</p>
     </div>
     <div class="writing rise">{rows}</div>
   </div>

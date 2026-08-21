@@ -62,7 +62,7 @@ Add an object to the **top** of `content/writing.json` (newest first) and rebuil
 }
 ```
 
-`kind` is a free-text label rendered as a small tag, so `Article`, `Post`, or `Talk` all work. `source` is optional and points at the longer write-up behind the post; omit the key entirely if there isn't one.
+`kind` is a free-text label rendered as a small tag, so `Article`, `Post`, `Dashboard`, or `Talk` all work. `source` is optional and points at the longer write-up behind the item; omit the key entirely if there isn't one. `linkLabel` is also optional and overrides the default "Read on LinkedIn" on the primary link, which is how the StratHub360 entry reads "Open StratHub360".
 
 ### Adding a perspective
 

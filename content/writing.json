@@ -1,12 +1,28 @@
 [
   {
+    "kind": "Dashboard",
+    "date": "Aug 2026",
+    "dateFull": "August 2026",
+    "title": "StratHub360: a unified FSO-FSP portfolio command center",
+    "description": "A mockup dashboard I built to show how the unified hybrid FSO-FSP framework works in practice, and which metrics and controls belong in each business process. It covers seven process zones (scoping and pricing, contracts and amendments, resource management, talent acquisition, people management, finance and revenue, and program oversight), each with maturity level, KPI controls, assignments, and operational exceptions. An AI layer runs across them for hybrid pricing, resource matching, attrition risk, billing anomaly detection, and scope-drift health scoring, sequenced over a four-phase roadmap from CRM tagging in the first 30 days to AI enablement at 6 to 12 months.",
+    "url": "https://strathub360.com/",
+    "linkLabel": "Open StratHub360",
+    "source": {
+      "label": "The framework behind it",
+      "url": "https://ravikrali.github.io/Hybrid-FSO-FSP-Business-Strategy/"
+    }
+  },
+  {
     "kind": "Article",
     "date": "Aug 2026",
     "dateFull": "15 August 2026",
     "title": "Hybrid CRO: Unified Platform Strategy for FSO-FSP",
     "description": "Most CROs run full service outsourcing and functional service provision as separate business units, without shared P&L, staffing visibility, or pricing models. The article puts the cost of that separation at up to 10% of total revenue a year and proposes a unified portfolio built on a shared semantic engagement spine, with five agentic workflows that retain human oversight for ICH GCP E6(R3).",
     "url": "https://www.linkedin.com/pulse/hybrid-cro-unified-platform-strategy-fso-fsp-ravi-rali-g7cwe",
-    "source": { "label": "Full strategy note", "url": "https://ravikrali.github.io/Hybrid-FSO-FSP-Business-Strategy/" }
+    "source": {
+      "label": "Full strategy note",
+      "url": "https://ravikrali.github.io/Hybrid-FSO-FSP-Business-Strategy/"
+    }
   },
   {
     "kind": "Article",
@@ -15,7 +31,10 @@
     "title": "The AI-Native Data Engineering Thesis",
     "description": "Six assumptions that AI inverts in data engineering, starting with the move from pipelines you write to pipelines you specify. The central risk it identifies: 72% of teams prioritize AI-assisted coding while 24% prioritize AI-assisted pipeline management, which is why the trust plane has to be sequenced first.",
     "url": "https://www.linkedin.com/pulse/ai-native-data-engineering-thesis-ravi-rali-z9cbf",
-    "source": { "label": "Full thesis", "url": "https://ravikrali.github.io/Data-Engineering/" }
+    "source": {
+      "label": "Full thesis",
+      "url": "https://ravikrali.github.io/Data-Engineering/"
+    }
   },
   {
     "kind": "Article",
@@ -24,7 +43,10 @@
     "title": "Master Data Management was built for a world that no longer exists",
     "description": "A first-principles review of MDM for the AI era, drawing on 20+ years of enterprise work. Covers ten structural failures of traditional hubs, how analyst positions on MDM have shifted, a vendor assessment, an AI-native reference architecture, and a phased migration approach.",
     "url": "https://www.linkedin.com/pulse/master-data-management-built-world-longer-exists-ravi-rali-5braf",
-    "source": { "label": "Full thesis", "url": "https://ravikrali.github.io/MDM-AI-Strategy/" }
+    "source": {
+      "label": "Full thesis",
+      "url": "https://ravikrali.github.io/MDM-AI-Strategy/"
+    }
   },
   {
     "kind": "Article",
@@ -33,7 +55,10 @@
     "title": "What Separates AI Strategy from AI Theater",
     "description": "88% of organizations now use AI, up from 55% two years earlier, and about 12% can demonstrate measurable returns. The article sets out the six components that separate deliberate execution from activity: problem selection, platform fit, direction, governance, adoption, and measurement.",
     "url": "https://www.linkedin.com/pulse/what-separates-ai-strategy-from-theater-ravi-rali-ftdef",
-    "source": { "label": "Full note", "url": "https://ravikrali.github.io/blogAIStrategy/" }
+    "source": {
+      "label": "Full note",
+      "url": "https://ravikrali.github.io/blogAIStrategy/"
+    }
   },
   {
     "kind": "Post",
@@ -42,6 +67,9 @@
     "title": "You don't need a massive AI budget. You need the right-sized one.",
     "description": "About 5% of AI pilots deliver a return, and AI projects fail at roughly twice the rate of conventional IT. The post argues the cause is usually mismatched investment rather than technology: building where you should buy, training where you should retrieve, and scaling pilots nobody adopts. It introduces an investment ladder you climb only when a real constraint requires it, plus a KPI scorecard to gate funding.",
     "url": "https://www.linkedin.com/posts/ravirali_you-dont-need-a-massive-ai-budget-you-need-activity-7475267138304319488-yHii",
-    "source": { "label": "The investment guide", "url": "https://ravikrali.github.io/blogAIInvestmentGuide/" }
+    "source": {
+      "label": "The investment guide",
+      "url": "https://ravikrali.github.io/blogAIInvestmentGuide/"
+    }
   }
 ]
