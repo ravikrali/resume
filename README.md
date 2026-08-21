@@ -61,15 +61,18 @@ Typography is Fraunces (display), Archivo (body) and IBM Plex Mono (metadata), l
 
 The site prints cleanly — `Ctrl/Cmd + P` on the home page gives a readable document with every roadmap panel expanded.
 
-## Publishing to GitHub Pages
+## Publishing
 
-This repository is **private**, and GitHub Pages only serves private repositories on paid plans. To publish:
+Live at **<https://ravikrali.github.io/resume/>**.
 
-1. Make the repository public — *Settings → General → Danger Zone → Change visibility*. (Or upgrade to GitHub Pro, which allows Pages from private repos.)
-2. *Settings → Pages* → Source: **Deploy from a branch** → Branch: `main`, folder: `/ (root)` → Save.
-3. The site appears at `https://ravikrali.github.io/resume/` within a minute or two.
+GitHub Pages is configured to deploy from the `main` branch, root folder. Every push to `main` republishes within a minute or so — there is no workflow to maintain. `.nojekyll` is committed so GitHub serves the files directly instead of running them through Jekyll.
 
-`.nojekyll` is committed so GitHub serves the files directly without running Jekyll.
+Deploying a content change is therefore:
+
+```bash
+python build.py
+git add -A && git commit -m "Update copy" && git push
+```
 
 ### Custom domain
 
