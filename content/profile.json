@@ -1,23 +1,43 @@
 {
   "name": "Ravi Kiran Rali",
   "shortName": "Ravi Rali",
-  "titles": ["Enterprise AI Architect", "Director, AI & Data Management", "Enterprise Data Architect"],
+  "titles": [
+    "Enterprise AI Architect",
+    "Director, AI & Data Management",
+    "Enterprise Data Architect"
+  ],
   "tagline": "I help regulated enterprises turn fragmented data into governed platforms that support reliable analytics and AI.",
   "location": "Raleigh, North Carolina · Remote / US",
   "email": "rali.rk@gmail.com",
   "linkedin": "https://www.linkedin.com/in/ravirali",
   "github": "https://github.com/ravikrali",
   "resumePdf": "Ravi_Rali.pdf",
-  "photo": "assets/img/ravi.jpg",
+  "photo": "assets/img/ravi-2026.jpg",
   "summary": [
     "I am an enterprise data and AI architecture leader with more than 25 years of experience across life sciences, financial services, healthcare, insurance, energy, and consulting.",
     "I combine hands-on architecture experience with executive and delivery leadership. I design data models, knowledge graphs, RAG pipelines, and governance controls while also leading teams, managing P&L, and securing executive support for multiyear programs. Most recently I launched an enterprise AI platform over a global clinical trial portfolio and built the metadata, lineage, and MDM foundations that support governed AI in a regulated environment."
   ],
   "metrics": [
-    { "figure": "25+", "unit": "yrs", "label": "Enterprise data, architecture, and delivery leadership" },
-    { "figure": "~60", "unit": "%", "label": "Analyst research time reduced by the enterprise AI platform at Parexel" },
-    { "figure": "10–15", "unit": "", "label": "Architects, engineers, and solution leads led, with P&L responsibility" },
-    { "figure": "3", "unit": "", "label": "Regulated industries: life sciences, financial services, healthcare" }
+    {
+      "figure": "25+",
+      "unit": "yrs",
+      "label": "Enterprise data, architecture, and delivery leadership"
+    },
+    {
+      "figure": "~60",
+      "unit": "%",
+      "label": "Analyst research time reduced by the enterprise AI platform at Parexel"
+    },
+    {
+      "figure": "10–15",
+      "unit": "",
+      "label": "Architects, engineers, and solution leads led, with P&L responsibility"
+    },
+    {
+      "figure": "3",
+      "unit": "",
+      "label": "Regulated industries: life sciences, financial services, healthcare"
+    }
   ],
   "value": [
     {
@@ -46,9 +66,25 @@
     }
   ],
   "credentials": [
-    { "title": "TOGAF Certified Enterprise Architect", "org": "The Open Group", "year": "2016" },
-    { "title": "Business Strategy for Competitive Advantage & Connected Strategy", "org": "The Wharton School", "year": "2020" },
-    { "title": "PMP Certified", "org": "Project Management Institute", "year": "2003–2007" },
-    { "title": "B.Tech, Chemical Engineering", "org": "Sri Venkateswara College of Engineering, Tirupati, India", "year": "1996" }
+    {
+      "title": "TOGAF Certified Enterprise Architect",
+      "org": "The Open Group",
+      "year": "2016"
+    },
+    {
+      "title": "Business Strategy for Competitive Advantage & Connected Strategy",
+      "org": "The Wharton School",
+      "year": "2020"
+    },
+    {
+      "title": "PMP Certified",
+      "org": "Project Management Institute",
+      "year": "2003–2007"
+    },
+    {
+      "title": "B.Tech, Chemical Engineering",
+      "org": "Sri Venkateswara College of Engineering, Tirupati, India",
+      "year": "1996"
+    }
   ]
 }

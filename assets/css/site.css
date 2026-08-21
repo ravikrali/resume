@@ -395,9 +395,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   height: auto;          /* beat the HTML height attribute */
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center;
   border-radius: 2px;
-  filter: grayscale(1) contrast(1.06);
   border: 1px solid var(--rule);
   box-shadow: var(--shadow-deep);
 }
